@@ -35,7 +35,7 @@ A beautiful, modern Jekyll website for your esthetics and cosmetology business. 
 
 1. **Clone or navigate to your website directory**
    ```bash
-   cd /Users/jackalhan/Development/zeybrowandwax
+   cd ~/zeybrowandwax
    ```
 
 2. **Create a Gemfile** (if not exists)
