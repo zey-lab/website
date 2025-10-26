@@ -57,6 +57,19 @@ business:
     # Script widget code (for embedded compact widget)
     script_url: "https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqqC3GmEJWcT3qmV35y79oz34mC2PeFJ4mC30m9dSycvCu7gevEhAJDXwOapcUbfY?v=AYvgH9piC2542dPv7zPDyxfdl3SqlyZEQjCrRPyjIes0#"
 
+    # Widget sizing (responsive)
+    sizing:
+      # Maximum width for script widget on desktop
+      max_width_desktop: "800px"     # Adjust this! Try: 600px, 800px, 1000px
+      # Maximum width on tablet
+      max_width_tablet: "90%"        # Percentage of screen width
+      # Maximum width on mobile
+      max_width_mobile: "100%"       # Full width on mobile
+      # Iframe height (only used for iframe widget type)
+      iframe_height: "800px"         # Adjust for iframe widget
+      # Minimum height for widget container
+      min_height: "500px"            # Adjust this! Try: 400px, 600px, 800px
+
   # Google Maps
   google_maps:
     enabled: true

@@ -125,14 +125,54 @@ title: Home
 
     <div class="booking-widget">
       {% if site.business.vagaro.enabled %}
-        <div id="vagaro-booking-widget" style="display: flex; justify-content: center; align-items: center; min-height: 400px;">
+        <!-- Responsive Widget Styles -->
+        <style>
+          .vagaro-widget-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: {{ site.business.vagaro.sizing.min_height | default: '500px' }};
+            width: 100%;
+          }
 
+          .vagaro-widget-inner {
+            width: 100%;
+            max-width: {{ site.business.vagaro.sizing.max_width_desktop | default: '800px' }};
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          /* Tablet responsive */
+          @media (max-width: 1024px) {
+            .vagaro-widget-inner {
+              max-width: {{ site.business.vagaro.sizing.max_width_tablet | default: '90%' }};
+            }
+          }
+
+          /* Mobile responsive */
+          @media (max-width: 768px) {
+            .vagaro-widget-inner {
+              max-width: {{ site.business.vagaro.sizing.max_width_mobile | default: '100%' }};
+              padding: 0 15px;
+            }
+            .vagaro-widget-container {
+              min-height: 400px;
+            }
+          }
+
+          .vagaro a {
+            font-size: 14px;
+            color: #AAA;
+            text-decoration: none;
+          }
+        </style>
+
+        <div class="vagaro-widget-container">
           {% if site.business.vagaro.widget_type == 'script' and site.business.vagaro.script_url != '' %}
             <!-- Vagaro JavaScript Widget (Compact) -->
-            <div style="text-align: center;">
+            <div class="vagaro-widget-inner">
               <div id='frameTitle' class='embedded-widget-title' style='font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 8px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;'>Book Your Appointment</div>
-              <div class="vagaro" style="width:100%; max-width: 500px; padding:0; border:0; margin:0 auto; text-align:center;">
-                <style>.vagaro a {font-size:14px; color:#AAA; text-decoration:none;}</style>
+              <div class="vagaro" style="width:100%; padding:0; border:0; margin:0 auto; text-align:center;">
                 <a href="https://www.vagaro.com/pro/">Powered by Vagaro</a>&nbsp;
                 <a href="https://www.vagaro.com/pro/salon-software">Salon Software</a>,&nbsp;
                 <a href="https://www.vagaro.com/pro/spa-software">Spa Software</a>&nbsp;&amp;&nbsp;
@@ -143,14 +183,16 @@ title: Home
 
           {% elsif site.business.vagaro.widget_url != '' %}
             <!-- Vagaro Iframe Widget (Full Booking Page) -->
-            <iframe
-              src="{{ site.business.vagaro.widget_url }}"
-              width="100%"
-              height="800"
-              style="border:0; border-radius: 8px;"
-              allowfullscreen=""
-              loading="lazy">
-            </iframe>
+            <div class="vagaro-widget-inner">
+              <iframe
+                src="{{ site.business.vagaro.widget_url }}"
+                width="100%"
+                height="{{ site.business.vagaro.sizing.iframe_height | default: '800px' }}"
+                style="border:0; border-radius: 8px; max-width: 100%;"
+                allowfullscreen=""
+                loading="lazy">
+              </iframe>
+            </div>
           {% endif %}
         </div>
       {% else %}
