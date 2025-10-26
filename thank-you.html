@@ -62,10 +62,10 @@ permalink: /thank-you/
 
       <!-- Action Buttons -->
       <div style="margin-top: 2rem;">
-        <a href="{{ site.baseurl }}/#home" class="btn btn-primary" style="margin: 0.5rem;">
+        <a href="{{ site.url }}{{ site.baseurl }}/#home" class="btn btn-primary" style="margin: 0.5rem;">
           Back to Home
         </a>
-        <a href="{{ site.baseurl }}/#services" class="btn btn-outline" style="margin: 0.5rem;">
+        <a href="{{ site.url }}{{ site.baseurl }}/#services" class="btn btn-outline" style="margin: 0.5rem;">
           View Services
         </a>
       </div>
@@ -85,3 +85,37 @@ permalink: /thank-you/
     </div>
   </div>
 </section>
+
+<!-- Smart Navigation Script -->
+<script>
+  // Ensure navigation works regardless of how the page is accessed
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the configured site URL and baseurl
+    const siteUrl = "{{ site.url }}";
+    const baseurl = "{{ site.baseurl }}";
+    const fullBaseUrl = siteUrl + baseurl;
+
+    // If we're on localhost, override with local URL
+    const isLocalhost = window.location.hostname === 'localhost' ||
+                       window.location.hostname === '127.0.0.1';
+
+    const homeUrl = isLocalhost ?
+                   window.location.origin + '/#home' :
+                   fullBaseUrl + '/#home';
+
+    const servicesUrl = isLocalhost ?
+                       window.location.origin + '/#services' :
+                       fullBaseUrl + '/#services';
+
+    // Update button hrefs if they don't already have full URLs
+    const buttons = document.querySelectorAll('a.btn');
+    buttons.forEach(function(button) {
+      const href = button.getAttribute('href');
+      if (href && href.includes('#home') && !href.startsWith('http')) {
+        button.setAttribute('href', homeUrl);
+      } else if (href && href.includes('#services') && !href.startsWith('http')) {
+        button.setAttribute('href', servicesUrl);
+      }
+    });
+  });
+</script>
