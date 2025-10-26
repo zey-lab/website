@@ -1,7 +1,7 @@
 # Site Settings
 title: "Zey Brow & Wax - Dallas Eyebrow Threading & Waxing | Greenville Ave"
 description: "Premier eyebrow threading, Brazilian waxing, lash lifts & esthetics services in Dallas, TX. Licensed esthetician on Greenville Avenue. Book your appointment today!"
-baseurl: "" # the subpath of your site, e.g. /blog /website/
+baseurl: "/website" # the subpath of your site, e.g. /blog /website/
 url: "https://zey-lab.github.io" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
 
 # SEO Settings
