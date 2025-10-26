@@ -1,7 +1,7 @@
 # Site Settings
 title: "Zey Brow & Wax - Dallas Eyebrow Threading & Waxing | Greenville Ave"
 description: "Premier eyebrow threading, Brazilian waxing, lash lifts & esthetics services in Dallas, TX. Licensed esthetician on Greenville Avenue. Book your appointment today!"
-baseurl: "/website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog /website/
 url: "https://zey-lab.github.io" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
 
 # SEO Settings
@@ -50,8 +50,8 @@ business:
   # Vagaro Booking
   vagaro:
     enabled: true
-    widget_url: "" # Add your Vagaro widget URL here
-    merchant_id: "" # Add your Vagaro merchant ID
+    widget_url: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVD4txhOFRv68ylzixNStjRLP/eJwxleRY2rw0Wq0P7HfNZw9vqHEPFm+soBoiLEbjQ3atxJ+l2INXOC8P47PxShI9G+d4drdCOYBZ5QmZW06ldViU0E63dKwzXHTOO+H2FPM8ve7aoyEok7htXO9kokLSEKlV4ue0JrU6n1Pb8weeVeOTKn0xvIWxSjWwS9vytnty3IykHLr+9HUJvZgOAqXPcPy7WDnooqtDc9OTNDecjLNnw24goZoPeKbxaZHavyWUcTJAOakIEQJ50TspVTiCoaBaoj/rsdEvIXkEbsive3jay1rgoanti6UAnOJ61J3Sx3T63eZJeQNpAdpQuz6vtDK8PZ1Fr0HgUcXjt50HaOyKdwguNu3YyZnKWq+HEYqNvoxdFuT0bi7De8YOqa14V39Yeb6syImHlcfcCpa"
+    merchant_id: "" # Optional - not required for this widget type
 
   # Google Maps
   google_maps:
