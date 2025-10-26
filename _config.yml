@@ -50,8 +50,12 @@ business:
   # Vagaro Booking
   vagaro:
     enabled: true
+    # Widget type: "iframe" or "script"
+    widget_type: "script"
+    # Iframe URL (for full booking page)
     widget_url: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVD4txhOFRv68ylzixNStjRLP/eJwxleRY2rw0Wq0P7HfNZw9vqHEPFm+soBoiLEbjQ3atxJ+l2INXOC8P47PxShI9G+d4drdCOYBZ5QmZW06ldViU0E63dKwzXHTOO+H2FPM8ve7aoyEok7htXO9kokLSEKlV4ue0JrU6n1Pb8weeVeOTKn0xvIWxSjWwS9vytnty3IykHLr+9HUJvZgOAqXPcPy7WDnooqtDc9OTNDecjLNnw24goZoPeKbxaZHavyWUcTJAOakIEQJ50TspVTiCoaBaoj/rsdEvIXkEbsive3jay1rgoanti6UAnOJ61J3Sx3T63eZJeQNpAdpQuz6vtDK8PZ1Fr0HgUcXjt50HaOyKdwguNu3YyZnKWq+HEYqNvoxdFuT0bi7De8YOqa14V39Yeb6syImHlcfcCpa"
-    merchant_id: "" # Optional - not required for this widget type
+    # Script widget code (for embedded compact widget)
+    script_url: "https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqqC3GmEJWcT3qmV35y79oz34mC2PeFJ4mC30m9dSycvCu7gevEhAJDXwOapcUbfY?v=AYvgH9piC2542dPv7zPDyxfdl3SqlyZEQjCrRPyjIes0#"
 
   # Google Maps
   google_maps:
