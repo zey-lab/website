@@ -1,0 +1,23 @@
+<nav class="navigation">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      {{ site.business.name | default: "Zey Brow & Wax" }}
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      {% if site.design.images.gallery_enabled %}<li><a href="#gallery" class="nav-link">Gallery</a></li>{% endif %}
+      <li><a href="#booking" class="nav-link">Book Now</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      {% if site.business.phone %}
+      <li><a href="tel:{{ site.business.phone }}" class="btn btn-primary">{{ site.business.phone }}</a></li>
+      {% endif %}
+    </ul>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+      <span>☰</span>
+    </button>
+  </div>
+</nav>

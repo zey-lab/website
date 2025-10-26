@@ -1,0 +1,130 @@
+# Site Settings
+title: "Zey Brow & Wax - Dallas Eyebrow Threading & Waxing | Greenville Ave"
+description: "Premier eyebrow threading, Brazilian waxing, lash lifts & esthetics services in Dallas, TX. Licensed esthetician on Greenville Avenue. Book your appointment today!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
+
+# SEO Settings
+seo:
+  keywords: "eyebrow threading Dallas, waxing Dallas, lash lift Dallas, Brazilian wax Dallas, esthetician Dallas, Greenville Avenue salon, eyebrow shaping Dallas, threading near me, Dallas beauty services"
+  author: "Zey Brow & Wax"
+  geo_region: "US-TX"
+  geo_placename: "Dallas"
+  geo_position: "32.8271;-96.7699" # Update with your exact coordinates
+  ICBM: "32.8271, -96.7699"
+
+# Business Information
+business:
+  name: "Zey Brow & Wax"
+  tagline: "Expert Beauty & Grooming Services"
+  description: "Licensed esthetician and cosmetologist providing premium threading, waxing, lifting, eyebrow shaping, eyelash services, and hair removal in Dallas."
+
+  # Contact Information
+  phone: "(555) 123-4567" # Update with your actual phone number
+  email: "info@zeybrowandwax.com" # Update with your actual email
+
+  # Location
+  address:
+    street: "3611 Greenville Avenue"
+    city: "Dallas"
+    state: "TX"
+    zip: "75206" # Update with actual zip code
+    full: "3611 Greenville Avenue, Dallas, TX"
+
+  # Social Media (optional - add your handles)
+  social:
+    instagram: "" # Your Instagram handle
+    facebook: "" # Your Facebook page
+    yelp: "" # Your Yelp page
+
+  # Hours of Operation
+  hours:
+    monday: "9:00 AM - 7:00 PM"
+    tuesday: "9:00 AM - 7:00 PM"
+    wednesday: "9:00 AM - 7:00 PM"
+    thursday: "9:00 AM - 7:00 PM"
+    friday: "9:00 AM - 7:00 PM"
+    saturday: "10:00 AM - 6:00 PM"
+    sunday: "Closed"
+
+  # Vagaro Booking
+  vagaro:
+    enabled: true
+    widget_url: "" # Add your Vagaro widget URL here
+    merchant_id: "" # Add your Vagaro merchant ID
+
+  # Google Maps
+  google_maps:
+    enabled: true
+    embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4858.543996087682!2d-96.77288172328232!3d32.83131368120748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9fc3ca6e104b%3A0x629bc1955e28296b!2sZey%20Brow%20%26%20Wax!5e1!3m2!1sen!2sus!4v1761465753543!5m2!1sen!2sus"
+    # Example: "https://www.google.com/maps/embed?pb=!1m18!1m12..."
+
+# Design Settings
+design:
+  # Color Scheme - Modern, elegant palette for beauty salon
+  primary_color: "#2c2c2c"      # Dark charcoal for sophistication
+  secondary_color: "#d4af37"     # Gold accent for luxury
+  accent_color: "#8b7355"        # Warm brown
+  background_color: "#ffffff"    # Clean white
+  text_color: "#333333"          # Dark gray for readability
+  light_text: "#666666"          # Light gray for secondary text
+
+  # Typography
+  heading_font: "'Playfair Display', serif"
+  body_font: "'Montserrat', sans-serif"
+
+  # Hero Section
+  hero:
+    title: "Elevate Your Beauty"
+    subtitle: "Expert Threading, Waxing & Lash Services in Dallas"
+    cta_text: "Book Appointment"
+    background_image: "assets/images/hero-bg.jpg" # Add your hero image
+
+  # Images & Gallery
+  images:
+    about_image: "assets/images/about.jpg" # Your professional photo
+
+    # Gallery - Add your salon and client photos here
+    # You can add as many as you want!
+    gallery_enabled: true
+    gallery:
+      - image: "assets/images/gallery/salon-1.jpg"
+        caption: "Our welcoming salon space"
+        alt: "Salon interior"
+
+      - image: "assets/images/gallery/eyebrow-threading.jpg"
+        caption: "Precision eyebrow threading"
+        alt: "Eyebrow threading service"
+
+      - image: "assets/images/gallery/lash-lift.jpg"
+        caption: "Beautiful lash lift results"
+        alt: "Lash lift before and after"
+
+      - image: "assets/images/gallery/client-1.jpg"
+        caption: "Happy client with perfect brows"
+        alt: "Client with shaped eyebrows"
+
+      - image: "assets/images/gallery/salon-2.jpg"
+        caption: "Clean and professional environment"
+        alt: "Salon treatment room"
+
+      - image: "assets/images/gallery/waxing-area.jpg"
+        caption: "Private waxing area"
+        alt: "Waxing treatment room"
+
+    # Social proof images (optional - for testimonials section)
+    testimonial_images_enabled: false
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
