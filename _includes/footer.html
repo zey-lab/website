@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="footer-content">
+    {% if site.business.social.instagram or site.business.social.facebook or site.business.social.yelp %}
+    <div class="social-links">
+      {% if site.business.social.instagram %}
+      <a href="https://instagram.com/{{ site.business.social.instagram }}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+        <span>📷</span>
+      </a>
+      {% endif %}
+
+      {% if site.business.social.facebook %}
+      <a href="{{ site.business.social.facebook }}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+        <span>📘</span>
+      </a>
+      {% endif %}
+
+      {% if site.business.social.yelp %}
+      <a href="{{ site.business.social.yelp }}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Yelp">
+        <span>⭐</span>
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.business.name }}. All rights reserved.</p>
+    <p>Licensed Esthetician & Cosmetologist | {{ site.business.address.city }}, {{ site.business.address.state }}</p>
+  </div>
+</footer>

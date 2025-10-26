@@ -1,0 +1,135 @@
+<!-- SEO Meta Tags -->
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="keywords" content="{{ site.seo.keywords }}">
+<meta name="author" content="{{ site.seo.author }}">
+<meta name="geo.region" content="{{ site.seo.geo_region }}">
+<meta name="geo.placename" content="{{ site.seo.geo_placename }}">
+<meta name="geo.position" content="{{ site.seo.geo_position }}">
+<meta name="ICBM" content="{{ site.seo.ICBM }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="business.business">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:image" content="{{ site.url }}/assets/images/social-share.jpg">
+<meta property="business:contact_data:street_address" content="{{ site.business.address.street }}">
+<meta property="business:contact_data:locality" content="{{ site.business.address.city }}">
+<meta property="business:contact_data:region" content="{{ site.business.address.state }}">
+<meta property="business:contact_data:postal_code" content="{{ site.business.address.zip }}">
+<meta property="business:contact_data:country_name" content="USA">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{{ page.title | default: site.title }}">
+<meta property="twitter:description" content="{{ page.description | default: site.description }}">
+<meta property="twitter:image" content="{{ site.url }}/assets/images/social-share.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- Local Business Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": "{{ site.url }}",
+  "name": "{{ site.business.name }}",
+  "description": "{{ site.business.description }}",
+  "url": "{{ site.url }}",
+  "telephone": "{{ site.business.phone }}",
+  "email": "{{ site.business.email }}",
+  "priceRange": "$$",
+  "image": "{{ site.url }}/assets/images/about.jpg",
+  "logo": "{{ site.url }}/assets/images/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.business.address.street }}",
+    "addressLocality": "{{ site.business.address.city }}",
+    "addressRegion": "{{ site.business.address.state }}",
+    "postalCode": "{{ site.business.address.zip }}",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ site.seo.geo_position | split: ';' | first }}",
+    "longitude": "{{ site.seo.geo_position | split: ';' | last }}"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "{{ site.business.hours.monday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.monday | split: ' - ' | last }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "{{ site.business.hours.tuesday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.tuesday | split: ' - ' | last }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "{{ site.business.hours.wednesday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.wednesday | split: ' - ' | last }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "{{ site.business.hours.thursday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.thursday | split: ' - ' | last }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "{{ site.business.hours.friday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.friday | split: ' - ' | last }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "{{ site.business.hours.saturday | split: ' - ' | first }}",
+      "closes": "{{ site.business.hours.saturday | split: ' - ' | last }}"
+    }
+  ],
+  "sameAs": [
+    {% if site.business.social.instagram %}"https://instagram.com/{{ site.business.social.instagram }}",{% endif %}
+    {% if site.business.social.facebook %}"{{ site.business.social.facebook }}",{% endif %}
+    {% if site.business.social.yelp %}"{{ site.business.social.yelp }}"{% endif %}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Beauty Services",
+    "itemListElement": [
+      {% for service_category in site.data.services %}
+        {% for item in service_category.items %}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{{ item.name }}",
+          "description": "{{ item.description }}"
+        }
+      }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "{{ site.url }}"
+  }]
+}
+</script>

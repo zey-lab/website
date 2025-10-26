@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+# Use an older Jekyll version that works with Ruby 2.6
+gem "jekyll", "~> 3.9.0"
+gem "webrick"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+end
