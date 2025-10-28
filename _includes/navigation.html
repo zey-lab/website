@@ -1,20 +1,27 @@
 <nav class="navigation">
   <div class="nav-container">
-    <a href="#home" class="logo">
-      {{ site.business.name | default: "Zey Brow & Wax" }}
-    </a>
+    <div class="nav-content">
+      <a href="#home" class="logo">
+        <img src="{{ site.baseurl }}/{{ site.logo_display.image | default: 'assets/images/logo.png' }}"
+             alt="{{ site.business.name }}"
+             class="logo-image"
+             style="height: {{ site.logo_display.height | default: '50px' }}; width: {{ site.logo_display.width | default: 'auto' }};">
+        {% if site.logo_display.show_text != false %}<span class="logo-text">{{ site.business.name | default: "Zey Brow & Wax" }}</span>{% endif %}
+      </a>
 
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#services" class="nav-link">Services</a></li>
-      {% if site.design.images.gallery_enabled %}<li><a href="#gallery" class="nav-link">Gallery</a></li>{% endif %}
-      <li><a href="#booking" class="nav-link">Book Now</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-      {% if site.business.phone %}
-      <li><a href="tel:{{ site.business.phone }}" class="btn btn-primary">{{ site.business.phone }}</a></li>
-      {% endif %}
-    </ul>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">{{ site.content.navigation.home }}</a></li>
+        <li><a href="#about" class="nav-link">{{ site.content.navigation.about }}</a></li>
+        {% if site.design.sections.services_enabled %}<li><a href="#services" class="nav-link">{{ site.content.navigation.services }}</a></li>{% endif %}
+        {% if site.design.sections.gallery_enabled %}<li><a href="#gallery" class="nav-link">{{ site.content.navigation.gallery }}</a></li>{% endif %}
+        {% if site.design.sections.testimonials_enabled %}<li><a href="#testimonials" class="nav-link">{{ site.content.navigation.testimonials }}</a></li>{% endif %}
+        <li><a href="#booking" class="nav-link">{{ site.content.navigation.booking }}</a></li>
+        <li><a href="#contact" class="nav-link">{{ site.content.navigation.contact }}</a></li>
+        {% if site.business.phone %}
+        <li><a href="tel:{{ site.business.phone }}" class="btn btn-primary">{{ site.business.phone }}</a></li>
+        {% endif %}
+      </ul>
+    </div>
 
     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
       <span>☰</span>

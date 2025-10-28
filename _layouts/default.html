@@ -7,6 +7,9 @@
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
+  <!-- Google Search Console Verification -->
+  {% include google-search-console.html %}
+
   <!-- SEO Meta Tags & Structured Data -->
   {% include seo.html %}
 
@@ -21,8 +24,11 @@
   <!-- Jekyll SEO Tag Plugin -->
   {% seo %}
 
-  <!-- Favicon (optional - add your favicon files) -->
-  <!-- <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}"> -->
+  <!-- Emoji Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.favicon_emoji | default: '💅' }}</text></svg>">
+
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
 </head>
 <body>
   {% include navigation.html %}

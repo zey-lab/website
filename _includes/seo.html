@@ -2,6 +2,8 @@
 <meta name="description" content="{{ page.description | default: site.description }}">
 <meta name="keywords" content="{{ site.seo.keywords }}">
 <meta name="author" content="{{ site.seo.author }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
 <meta name="geo.region" content="{{ site.seo.geo_region }}">
 <meta name="geo.placename" content="{{ site.seo.geo_placename }}">
 <meta name="geo.position" content="{{ site.seo.geo_position }}">
@@ -97,6 +99,7 @@
   "sameAs": [
     {% if site.business.social.instagram %}"https://instagram.com/{{ site.business.social.instagram }}",{% endif %}
     {% if site.business.social.facebook %}"{{ site.business.social.facebook }}",{% endif %}
+    {% if site.business.social.tiktok %}"https://tiktok.com/@{{ site.business.social.tiktok }}",{% endif %}
     {% if site.business.social.yelp %}"{{ site.business.social.yelp }}"{% endif %}
   ],
   "hasOfferCatalog": {
