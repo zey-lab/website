@@ -3,8 +3,8 @@ title: "Zey Brow & Wax | Eyebrow Threading & Waxing @ Dallas, TX"
 description: "Premier Eyebrow Threading, Brazilian Waxing, Lash lifts, Browtint and many more ... in Dallas, TX. Licensed Master Esthetician on 3611 Greenville Avenue, Dallas, TX. Book your appointment today!"
 # Favicon emoji (displays in browser tab)
 favicon_emoji: "✨"
-baseurl: "/website" # For GitHub Pages subdirectory (empty "" for custom domain)
-url: "https://zey-lab.github.io" # GitHub Pages URL (use https://www.zeybrow.com for custom domain)
+baseurl: "" # Empty for custom domain (use "/website" for GitHub Pages subdirectory)
+url: "https://www.zeybrow.com" # Your custom domain (use https://zey-lab.github.io for GitHub Pages)
 
 # Logo path for SEO (jekyll-seo-tag plugin requirement - must be a string)
 logo: "assets/images/logo.png"
