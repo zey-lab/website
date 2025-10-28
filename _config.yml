@@ -4,7 +4,7 @@ description: "Premier Eyebrow Threading, Brazilian Waxing, Lash lifts, Browtint 
 # Favicon emoji (displays in browser tab)
 favicon_emoji: "✨"
 baseurl: "" # Empty for custom domain (use "/website" for GitHub Pages subdirectory)
-url: "https://www.zeybrow.com" # Your custom domain
+url: "https://zeybrow.com" # Your custom domain
 
 # Logo path for SEO (jekyll-seo-tag plugin requirement - must be a string)
 logo: "assets/images/logo.png"

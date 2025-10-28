@@ -3,4 +3,4 @@ Allow: /
 Disallow: /assets/
 Disallow: /_site/
 
-Sitemap: https://www.zeybrow.com/sitemap.xml
+Sitemap: https://zeybrow.com/sitemap.xml
