@@ -1,27 +1,61 @@
 # Site Settings
-title: "Zey Brow & Wax - Dallas Eyebrow Threading & Waxing | Greenville Ave"
-description: "Premier eyebrow threading, Brazilian waxing, lash lifts & esthetics services in Dallas, TX. Licensed esthetician on Greenville Avenue. Book your appointment today!"
-baseurl: "/website" # the subpath of your site, e.g. /blog /website/
-url: "https://zey-lab.github.io" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
+title: "Zey Brow & Wax | Eyebrow Threading & Waxing @ Dallas, TX"
+description: "Premier Eyebrow Threading, Brazilian Waxing, Lash lifts, Browtint and many more ... in Dallas, TX. Licensed Master Esthetician on 3611 Greenville Avenue, Dallas, TX. Book your appointment today!"
+# Favicon emoji (displays in browser tab)
+favicon_emoji: "✨"
+baseurl: "" # Empty for custom domain (use "/website" for GitHub Pages subdirectory)
+url: "https://www.zeybrow.com" # Your custom domain
+
+# Logo path for SEO (jekyll-seo-tag plugin requirement - must be a string)
+logo: "assets/images/logo.png"
+
+# Logo Display Configuration (for header/navigation)
+logo_display:
+  image: "assets/images/logo.png"  # Path to logo file
+  height: "140px"      # Logo height (try: 80px, 100px, 120px, 140px, 160px for larger logos)
+  width: "auto"       # Usually keep as "auto" to maintain aspect ratio
+  show_text: false     # Show business name next to logo (true/false)
 
 # SEO Settings
 seo:
-  keywords: "eyebrow threading Dallas, waxing Dallas, lash lift Dallas, Brazilian wax Dallas, esthetician Dallas, Greenville Avenue salon, eyebrow shaping Dallas, threading near me, Dallas beauty services"
+  keywords: "eyebrow threading Dallas, highland park, dallas, waxing Dallas, threading, lash lift Dallas, Brazilian wax Dallas, esthetician Dallas, Greenville Avenue salon, eyebrow shaping Dallas Texas, Dallas, threading near me, Dallas beauty services"
   author: "Zey Brow & Wax"
   geo_region: "US-TX"
   geo_placename: "Dallas"
-  geo_position: "32.8271;-96.7699" # Update with your exact coordinates
-  ICBM: "32.8271, -96.7699"
+  geo_position: "32.83157061184823;-96.77025315822564" # Update with your exact coordinates
+  ICBM: "32.83157061184823, -96.77025315822564"
+
+# Google Analytics Configuration
+# To enable: Set enabled to true and add your tracking ID
+# Get your tracking ID from: https://analytics.google.com/
+google_analytics:
+  enabled: true  # Set to true to enable Google Analytics tracking
+  tracking_id: "G-PPYRT48RTD"  # Your GA4 tracking ID (format: G-XXXXXXXXXX)
+  # Optional: anonymize IP addresses for privacy compliance
+  anonymize_ip: false
+
+# Google Search Console Configuration
+# To enable: Set enabled to true and add your verification code
+# Get your verification code from: https://search.google.com/search-console/
+google_search_console:
+  enabled: false  # Set to true to enable Google Search Console verification
+  verification_code: ""  # Your GSC verification code (e.g., "abc123xyz456...")
+  # The verification code is the content value from the meta tag Google provides
+  # Example: <meta name="google-site-verification" content="abc123xyz456..." />
+  # Just paste the "abc123xyz456..." part here
 
 # Business Information
 business:
   name: "Zey Brow & Wax"
-  tagline: "Expert Beauty & Grooming Services"
-  description: "Licensed esthetician and cosmetologist providing premium threading, waxing, lifting, eyebrow shaping, eyelash services, and hair removal in Dallas."
+  description: "Licensed Master Esthetician providing Premium threading, waxing, lifting, eyebrow shaping, eyelash services, and hair removal in Dallas, TX."
+
+  # Professional credentials (used in footer, about section, etc.)
+  credentials: "Licensed Master Esthetician"
+  credentials_short: "Licensed Master Esthetician"  # Shorter version for compact areas
 
   # Contact Information
-  phone: "(555) 123-4567" # Update with your actual phone number
-  email: "info@zeybrowandwax.com" # Update with your actual email
+  phone: "(214) 258-5207" # Update with your actual phone number
+  email: "info@zeybrow.com" # Update with your actual email
 
   # Location
   address:
@@ -31,21 +65,27 @@ business:
     zip: "75206" # Update with actual zip code
     full: "3611 Greenville Avenue, Dallas, TX"
 
-  # Social Media (optional - add your handles)
+  # Social Media
+  # How to find your URLs:
+  # Instagram: https://instagram.com/YOUR_USERNAME (e.g., zeybrowandwax)
+  # Facebook: https://facebook.com/YOUR_PAGE_NAME or full URL
+  # TikTok: https://tiktok.com/@YOUR_USERNAME
+  # Yelp: Go to your Yelp business page and copy the full URL
   social:
-    instagram: "" # Your Instagram handle
-    facebook: "" # Your Facebook page
-    yelp: "" # Your Yelp page
+    instagram: "zey_browandwax" # Just username (e.g., "zeybrowandwax") or leave empty
+    facebook: "https://www.facebook.com/profile.php?id=61566457570056" # Full URL (e.g., "https://facebook.com/zeybrowandwax") or leave empty
+    tiktok: "zeybrowandwax" # Just username without @ (e.g., "zeybrowandwax") or leave empty
+    #yelp: "" # Full Yelp URL (e.g., "https://www.yelp.com/biz/zey-brow-and-wax-dallas") or leave empty
 
   # Hours of Operation
   hours:
-    monday: "9:00 AM - 7:00 PM"
-    tuesday: "9:00 AM - 7:00 PM"
-    wednesday: "9:00 AM - 7:00 PM"
-    thursday: "9:00 AM - 7:00 PM"
-    friday: "9:00 AM - 7:00 PM"
-    saturday: "10:00 AM - 6:00 PM"
-    sunday: "Closed"
+    monday: "Closed"
+    tuesday: "10:00 AM - 8:00 PM"
+    wednesday: "10:00 AM - 8:00 PM"
+    thursday: "10:00 AM - 8:00 PM"
+    friday: "10:00 AM - 8:00 PM"
+    saturday: "10:00 AM - 8:00 PM"
+    sunday: "12:00 PM - 6:00 PM"
 
   # Vagaro Booking
   vagaro:
@@ -57,18 +97,25 @@ business:
     # Script widget code (for embedded compact widget)
     script_url: "https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqqC3GmEJWcT3qmV35y79oz34mC2PeFJ4mC30m9dSycvCu7gevEhAJDXwOapcUbfY?v=AYvgH9piC2542dPv7zPDyxfdl3SqlyZEQjCrRPyjIes0#"
 
-    # Widget sizing (responsive)
+    # Widget sizing (responsive) - Adjust these values to your preference
     sizing:
-      # Maximum width for script widget on desktop
-      max_width_desktop: "800px"     # Adjust this! Try: 600px, 800px, 1000px
-      # Maximum width on tablet
-      max_width_tablet: "90%"        # Percentage of screen width
-      # Maximum width on mobile
-      max_width_mobile: "100%"       # Full width on mobile
-      # Iframe height (only used for iframe widget type)
-      iframe_height: "800px"         # Adjust for iframe widget
-      # Minimum height for widget container
-      min_height: "500px"            # Adjust this! Try: 400px, 600px, 800px
+      # Width settings
+      max_width_desktop: "800px"     # Desktop width (try: 600px, 800px, 1000px)
+      max_width_tablet: "90%"        # Tablet width (percentage)
+      max_width_mobile: "100%"       # Mobile width (full width)
+
+      # Height settings (responsive per device)
+      height_desktop: "1000px"        # Desktop height (try: 500px, 600px, 700px, 800px)
+      height_tablet: "800px"         # Tablet height (try: 450px, 550px, 650px)
+      height_mobile: "500px"         # Mobile height (try: 400px, 500px, 600px)
+
+      # Iframe-specific height (only for iframe widget type)
+      iframe_height_desktop: "1000px"
+      iframe_height_tablet: "800px"
+      iframe_height_mobile: "600px"
+
+      # Container minimum height
+      min_height: "400px"            # Minimum container height
 
   # Google Maps
   google_maps:
@@ -93,44 +140,171 @@ design:
   # Hero Section
   hero:
     title: "Elevate Your Beauty"
-    subtitle: "Expert Threading, Waxing & Lash Services in Dallas"
+    subtitle: "Expert Threading, Waxing & Lash Services in Dallas, Texas"
     cta_text: "Book Appointment"
-    background_image: "assets/images/hero-bg.jpg" # Add your hero image
+    cta_secondary_text: "View Services"
+    # Background images for different devices (responsive)
+    background_image_desktop: "assets/images/collage.jpg"      # Desktop background (landscape)
+    background_image_tablet: "assets/images/collage.jpg"  # Tablet background (optional, falls back to desktop)
+    background_image_mobile: "assets/images/collage.jpg"  # Mobile background (portrait, optional)
+    # Background positioning
+    background_position_desktop: "center center"  # Options: center center, top center, bottom center
+    background_position_tablet: "center center"
+    background_position_mobile: "center center"
+    # Overlay opacity (0.0 to 1.0)
+    overlay_opacity: "0.2"  # Dark overlay over background image
+
+  # Section Visibility (Enable/Disable sections)
+  sections:
+    services_enabled: false      # Set to true to show Services section
+    gallery_enabled: true        # Set to true to show Gallery section
+    testimonials_enabled: true   # Set to true to show Testimonials section
 
   # Images & Gallery
   images:
-    about_image: "assets/images/about.jpg" # Your professional photo
+    about_image: "assets/images/zeynep.png" # Your professional photo
 
     # Gallery - Add your salon and client photos here
     # You can add as many as you want!
-    gallery_enabled: true
     gallery:
-      - image: "assets/images/gallery/salon-1.jpg"
-        caption: "Our welcoming salon space"
-        alt: "Salon interior"
-
-      - image: "assets/images/gallery/eyebrow-threading.jpg"
-        caption: "Precision eyebrow threading"
-        alt: "Eyebrow threading service"
-
-      - image: "assets/images/gallery/lash-lift.jpg"
-        caption: "Beautiful lash lift results"
-        alt: "Lash lift before and after"
-
       - image: "assets/images/gallery/client-1.jpg"
-        caption: "Happy client with perfect brows"
-        alt: "Client with shaped eyebrows"
+        caption: "Cluster Lashes Service"
+        alt: "Cluster Lashes Service"
 
-      - image: "assets/images/gallery/salon-2.jpg"
-        caption: "Clean and professional environment"
-        alt: "Salon treatment room"
+      - image: "assets/images/gallery/client-2.jpg"
+        caption: "Eyebrow Threading Service"
+        alt: "Eyebrow Threading Service"
 
-      - image: "assets/images/gallery/waxing-area.jpg"
-        caption: "Private waxing area"
-        alt: "Waxing treatment room"
+      - image: "assets/images/gallery/client-3.jpg"
+        caption: "Eyebrow Tinting Service"
+        alt: "Eyebrow Tinting Service"
 
-    # Social proof images (optional - for testimonials section)
-    testimonial_images_enabled: false
+      - image: "assets/images/gallery/client-4.jpg"
+        caption: "Eyelashes Tinting and Lifting Service"
+        alt: "Eyelashes Tinting and Lifting Service"
+
+      - image: "assets/images/gallery/client-5.jpg"
+        caption: "Eyebrow Lamination Service"
+        alt: "Eyebrow Lamination Service"
+
+      - image: "assets/images/gallery/client-6.jpg"
+        caption: "Eyebrow Threading and Extension Lashes Service"
+        alt: "Eyebrow Threading and Extension Lashes Service"
+
+  # Testimonials Section
+  testimonials:
+    enabled: true  # Set to true to show testimonials section
+    section_title: "What Our Clients Say"
+    section_subtitle: "Real experiences from our satisfied customers"
+
+    # Add your client testimonials here
+    items:
+      - name: "Elizabeth Clements"
+        photo: ""  # Optional client photo, leave empty to show initials
+        rating: 5  # Number of stars (1-5)
+        text: "Zey is so talented and wonderful at brows!! I always go to her for waxing/threading my brows and she does an excellent job. Her salon is so clean and beautiful and has a really inviting vibe when you walk in! Close parking up front and it’s in such a cute area! I highly recommend!!!"
+        service: "Eyebrow Threading Service"
+        service_photo: ""  # Optional: photo of the service result
+
+      - name: "Birgul Scarlett Ersan"
+        photo: "assets/images/testimonials/birgul.jpg"  # Empty means show initials
+        rating: 5
+        text: "My brows used to look unbelievably bad before I always had a sad expression on my face. But she completely transformed my look and gave me a whole new expression that makes me look amazing! Now I feel incredibly confident and beautiful. When it comes to lashes, she’s an absolute miracle worker the results are stunning every single time. I can’t recommend her enough!"
+        service: "Cluster Lashes Service"
+        service_photo: ""  # Optional service result photo
+
+      - name: "Zuri Cuello"
+        photo: ""
+        rating: 5
+        text: "Zey is a exceptional beauty professional who takes pride in her craft. Whether it’s brows, Brazilians, or anything in-between, she provides consistent high quality results that never disappoint. Book your appointment today!"
+        service: "Brazilian Waxing Service"
+        service_photo: ""  # Leave empty if no service photo
+
+# Page Content Configuration
+# All text content for your website - edit these to customize your site
+content:
+  # About Section
+  about:
+    section_title: "About Me"
+    # section_subtitle: "Your trusted beauty expert in Dallas"
+    intro_paragraph: "Hey, I’m Zey! "
+    detail_paragraph: "Welcome to my beauty studio on Greenville Avenue in Dallas, TX — a cozy space where beauty meets confidence. I specialize in threading, brow waxing, brow lamination, professional full body waxing, lash lifts, lash tinting, and cluster lashes, offering complete hair removal and beauty treatments designed to enhance your natural glow. With years of experience and professional certification, I take pride in making every client look and feel their absolute best through personalized, detail-oriented services. Every visit is customized to your needs — ensuring comfort, care, and stunning results that make you feel confident, refreshed, and truly beautiful inside and out."
+    credential_1_title: "Licensed"
+    credential_1_subtitle: "Master Esthetician"
+    credential_2_title: "Certified"
+    credential_2_subtitle: "Cosmetologist"
+
+  # Services Section
+  services:
+    section_title: "Our Services"
+    section_subtitle: "Premium beauty and grooming services tailored to your needs"
+
+  # Gallery Section
+  gallery:
+    section_title: "Our Work"
+    section_subtitle: "See the beauty transformations at Zey Brow & Wax"
+
+  # Booking Section
+  booking:
+    section_title: "Book Your Appointment"
+    section_subtitle: "Schedule your beauty transformation today"
+    widget_title: "Book Your Appointment"
+    fallback_title: "Ready to Book?"
+    fallback_subtitle: "Contact us to schedule your appointment"
+    fallback_call_button: "Call (214) 258-5207"
+    fallback_email_button: "Email Us"
+    fallback_note: "To enable online booking, add your Vagaro widget URL in _config.yml"
+
+  # Contact Section
+  contact:
+    section_title: "Visit Us"
+    section_subtitle: "We're located in the heart of Dallas on Greenville Avenue"
+    location_label: "Location"
+    phone_label: "Phone"
+    email_label: "Email"
+    hours_label: "Hours of Operation"
+    map_fallback_note: "Add your Google Maps embed URL in _config.yml to display interactive map"
+    directions_button: "Get Directions"
+
+  # Navigation
+  navigation:
+    home: "Home"
+    about: "About"
+    services: "Services"
+    gallery: "Gallery"
+    testimonials: "Reviews"
+    booking: "Book Now"
+    contact: "Visit Us"
+
+  # Thank You Page
+  thank_you:
+    page_title: "Thank You for Booking"
+    success_icon: "✓"
+    main_title: "Thank You for Booking!"
+    confirmation_message: "Your appointment has been confirmed. We've sent a confirmation to your email with all the details."
+    looking_forward: "We look forward to seeing you soon! ✨"
+    whats_next_title: "What's Next?"
+
+    step_1_title: "📧 Check Your Email"
+    step_1_detail: "You'll receive a confirmation email with appointment details"
+
+    step_2_title: "📅 Add to Calendar"
+    step_2_detail: "Use the calendar link in your email"
+
+    step_3_title: "⏰ Arrive 5 Minutes Early"
+    step_3_detail: "Please arrive a few minutes before your appointment"
+
+    step_4_title: "📞 Questions?"
+    step_4_detail: "Call us at (214) 258-5207"
+
+    important_notes_title: "Important Notes:"
+    note_1: "Please arrive with clean, makeup-free skin for facial services"
+    note_2: "Avoid caffeine before waxing appointments"
+    note_3: "24-hour cancellation notice required"
+    note_4: "Contact lenses should be removed for lash services"
+
+    button_home: "Back to Home"
+    button_services: "View Services"
 
 # Build settings
 markdown: kramdown

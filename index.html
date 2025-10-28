@@ -1,26 +1,42 @@
 ---
 layout: default
-title: Home
 ---
+
+<!-- Hero Background CSS Variables -->
+<style>
+  :root {
+    --hero-bg-desktop: url('{{ site.baseurl }}/{{ site.design.hero.background_image_desktop }}');
+    --hero-bg-tablet: url('{{ site.baseurl }}/{{ site.design.hero.background_image_tablet | default: site.design.hero.background_image_desktop }}');
+    --hero-bg-mobile: url('{{ site.baseurl }}/{{ site.design.hero.background_image_mobile | default: site.design.hero.background_image_desktop }}');
+    --hero-bg-position-desktop: {{ site.design.hero.background_position_desktop | default: 'center center' }};
+    --hero-bg-position-tablet: {{ site.design.hero.background_position_tablet | default: 'center center' }};
+    --hero-bg-position-mobile: {{ site.design.hero.background_position_mobile | default: 'center center' }};
+    --hero-overlay-opacity: {{ site.design.hero.overlay_opacity | default: '0.4' }};
+  }
+</style>
 
 <!-- HERO SECTION -->
 <section id="home" class="hero">
   <div class="hero-content">
-    <h1>{{ site.design.hero.title | default: "Elevate Your Beauty" }}</h1>
-    <p>{{ site.design.hero.subtitle | default: "Expert Threading, Waxing & Lash Services in Dallas" }}</p>
+    <h1>{{ site.design.hero.title }}</h1>
+    <p>{{ site.design.hero.subtitle }}</p>
     <div class="hero-buttons">
-      <a href="#booking" class="btn btn-primary">{{ site.design.hero.cta_text | default: "Book Appointment" }}</a>
-      <a href="#services" class="btn btn-outline" style="color: white; border-color: white;">View Services</a>
+      <a href="#booking" class="btn btn-primary">{{ site.design.hero.cta_text }}</a>
+      {% if site.design.sections.services_enabled %}
+      <a href="#services" class="btn btn-outline" style="color: white; border-color: white;">{{ site.design.hero.cta_secondary_text }}</a>
+      {% else %}
+      <a href="#about" class="btn btn-outline" style="color: white; border-color: white;">Learn More</a>
+      {% endif %}
     </div>
   </div>
 </section>
 
 <!-- ABOUT SECTION -->
-<section id="about" class="section">
+<section id="about" class="section about-section">
   <div class="container">
     <div class="section-header">
-      <h2>About {{ site.business.name }}</h2>
-      <p>Your trusted beauty expert in Dallas</p>
+      <h2>{{ site.content.about.section_title }}</h2>
+      <!-- <p>{{ site.content.about.section_subtitle }}</p> -->
     </div>
 
     <div class="about-content">
@@ -29,27 +45,26 @@ title: Home
       </div>
 
       <div class="about-text">
-        <h3>Licensed Esthetician & Cosmetologist</h3>
-        <p>{{ site.business.description }}</p>
-        <p>Located on Greenville Avenue in Dallas, I specialize in precision eyebrow threading, professional waxing services, lash lifts, and comprehensive hair removal treatments. With years of experience and professional certification, I'm dedicated to helping you look and feel your absolute best.</p>
-        <p>Every service is performed with meticulous attention to detail, using premium products and proven techniques to ensure exceptional results and a comfortable experience.</p>
+        <h3>{{ site.business.credentials }}</h3>
+        <p>{{ site.content.about.intro_paragraph }}</p>
+        <p>{{ site.content.about.detail_paragraph }}</p>
 
         <div class="credentials">
           <div class="credential-badge">
             <div class="credential-icon">✓</div>
             <div>
-              <strong>Licensed</strong><br>
-              <small>Esthetician</small>
+              <strong>{{ site.content.about.credential_1_title }}</strong><br>
+              <small>{{ site.content.about.credential_1_subtitle }}</small>
             </div>
           </div>
 
-          <div class="credential-badge">
+          <!-- <div class="credential-badge">
             <div class="credential-icon">✓</div>
             <div>
-              <strong>Certified</strong><br>
-              <small>Cosmetologist</small>
+              <strong>{{ site.content.about.credential_2_title }}</strong><br>
+              <small>{{ site.content.about.credential_2_subtitle }}</small>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -57,11 +72,12 @@ title: Home
 </section>
 
 <!-- SERVICES SECTION -->
+{% if site.design.sections.services_enabled %}
 <section id="services" class="section section-dark">
   <div class="container">
     <div class="section-header">
-      <h2>Our Services</h2>
-      <p>Premium beauty and grooming services tailored to your needs</p>
+      <h2>{{ site.content.services.section_title }}</h2>
+      <p>{{ site.content.services.section_subtitle }}</p>
     </div>
 
     <div class="services-grid">
@@ -89,14 +105,15 @@ title: Home
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- GALLERY SECTION -->
-{% if site.design.images.gallery_enabled and site.design.images.gallery.size > 0 %}
+{% if site.design.sections.gallery_enabled and site.design.images.gallery.size > 0 %}
 <section id="gallery" class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Our Work</h2>
-      <p>See the beauty transformations at {{ site.business.name }}</p>
+      <h2>{{ site.content.gallery.section_title }}</h2>
+      <p>{{ site.content.gallery.section_subtitle }}</p>
     </div>
 
     <div class="gallery-grid">
@@ -115,45 +132,138 @@ title: Home
 </section>
 {% endif %}
 
+<!-- TESTIMONIALS SECTION -->
+{% if site.design.sections.testimonials_enabled %}
+<section id="testimonials" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ site.design.testimonials.section_title }}</h2>
+      <p>{{ site.design.testimonials.section_subtitle }}</p>
+    </div>
+
+    <div class="testimonials-grid">
+      {% for testimonial in site.design.testimonials.items %}
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          {% if testimonial.photo != "" and testimonial.photo %}
+          <img src="{{ site.baseurl }}/{{ testimonial.photo }}" alt="{{ testimonial.name }}" class="testimonial-photo">
+          {% else %}
+          <div class="testimonial-initials">{{ testimonial.name | slice: 0 }}</div>
+          {% endif %}
+          <div class="testimonial-info">
+            <h4>{{ testimonial.name }}</h4>
+            <div class="testimonial-rating">
+              {% for i in (1..testimonial.rating) %}⭐{% endfor %}
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-text">"{{ testimonial.text }}"</p>
+        {% if testimonial.service_photo != "" and testimonial.service_photo %}
+        <div class="testimonial-service-photo">
+          <img src="{{ site.baseurl }}/{{ testimonial.service_photo }}" alt="{{ testimonial.service }} result" onerror="this.parentElement.style.display='none'">
+        </div>
+        {% endif %}
+        <div class="testimonial-meta">
+          <span class="testimonial-service">{{ testimonial.service }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- BOOKING SECTION -->
 <section id="booking" class="section booking-section">
   <div class="container">
     <div class="section-header">
-      <h2>Book Your Appointment</h2>
-      <p>Schedule your beauty transformation today</p>
+      <h2>{{ site.content.booking.section_title }}</h2>
+      <p>{{ site.content.booking.section_subtitle }}</p>
     </div>
 
     <div class="booking-widget">
       {% if site.business.vagaro.enabled %}
         <!-- Responsive Widget Styles -->
         <style>
+          :root {
+            --vagaro-width-desktop: {{ site.business.vagaro.sizing.max_width_desktop | default: '800px' }};
+            --vagaro-width-tablet: {{ site.business.vagaro.sizing.max_width_tablet | default: '90%' }};
+            --vagaro-width-mobile: {{ site.business.vagaro.sizing.max_width_mobile | default: '100%' }};
+            --vagaro-height-desktop: {{ site.business.vagaro.sizing.height_desktop | default: '600px' }};
+            --vagaro-height-tablet: {{ site.business.vagaro.sizing.height_tablet | default: '550px' }};
+            --vagaro-height-mobile: {{ site.business.vagaro.sizing.height_mobile | default: '500px' }};
+            --vagaro-min-height: {{ site.business.vagaro.sizing.min_height | default: '400px' }};
+          }
+
           .vagaro-widget-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: {{ site.business.vagaro.sizing.min_height | default: '500px' }};
+            min-height: var(--vagaro-min-height);
             width: 100%;
           }
 
           .vagaro-widget-inner {
             width: 100%;
-            max-width: {{ site.business.vagaro.sizing.max_width_desktop | default: '800px' }};
+            max-width: var(--vagaro-width-desktop);
+            height: var(--vagaro-height-desktop);
             margin: 0 auto;
             text-align: center;
+            overflow-y: auto;  /* Enable vertical scrolling */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+
+          /* Custom scrollbar styling */
+          .vagaro-widget-inner::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          .vagaro-widget-inner::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+          }
+
+          .vagaro-widget-inner::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+          }
+
+          .vagaro-widget-inner::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+
+          .vagaro-widget-inner > div,
+          .vagaro-widget-inner iframe {
+            max-height: none; /* Allow content to expand */
+            min-height: var(--vagaro-height-desktop);
           }
 
           /* Tablet responsive */
           @media (max-width: 1024px) {
             .vagaro-widget-inner {
-              max-width: {{ site.business.vagaro.sizing.max_width_tablet | default: '90%' }};
+              max-width: var(--vagaro-width-tablet);
+              height: var(--vagaro-height-tablet);
+            }
+            .vagaro-widget-inner > div,
+            .vagaro-widget-inner iframe {
+              max-height: none;
+              min-height: var(--vagaro-height-tablet);
             }
           }
 
           /* Mobile responsive */
           @media (max-width: 768px) {
             .vagaro-widget-inner {
-              max-width: {{ site.business.vagaro.sizing.max_width_mobile | default: '100%' }};
+              max-width: var(--vagaro-width-mobile);
+              height: var(--vagaro-height-mobile);
               padding: 0 15px;
+            }
+            .vagaro-widget-inner > div,
+            .vagaro-widget-inner iframe {
+              max-height: none;
+              min-height: var(--vagaro-height-mobile);
             }
             .vagaro-widget-container {
               min-height: 400px;
@@ -171,7 +281,7 @@ title: Home
           {% if site.business.vagaro.widget_type == 'script' and site.business.vagaro.script_url != '' %}
             <!-- Vagaro JavaScript Widget (Compact) -->
             <div class="vagaro-widget-inner">
-              <div id='frameTitle' class='embedded-widget-title' style='font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 8px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;'>Book Your Appointment</div>
+              <!-- <div id='frameTitle' class='embedded-widget-title' style='font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 0; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 0;'>{{ site.content.booking.widget_title }}</div> -->
               <div class="vagaro" style="width:100%; padding:0; border:0; margin:0 auto; text-align:center;">
                 <a href="https://www.vagaro.com/pro/">Powered by Vagaro</a>&nbsp;
                 <a href="https://www.vagaro.com/pro/salon-software">Salon Software</a>,&nbsp;
@@ -198,23 +308,23 @@ title: Home
       {% else %}
         <!-- Fallback contact information -->
         <div style="text-align: center; padding: 2rem;">
-          <h3 style="color: #2c2c2c; margin-bottom: 1.5rem;">Ready to Book?</h3>
-          <p style="color: #666; margin-bottom: 2rem;">Contact us to schedule your appointment</p>
+          <h3 style="color: #2c2c2c; margin-bottom: 1.5rem;">{{ site.content.booking.fallback_title }}</h3>
+          <p style="color: #666; margin-bottom: 2rem;">{{ site.content.booking.fallback_subtitle }}</p>
 
           {% if site.business.phone %}
           <a href="tel:{{ site.business.phone }}" class="btn btn-primary" style="margin: 0.5rem;">
-            Call {{ site.business.phone }}
+            {{ site.content.booking.fallback_call_button }}
           </a>
           {% endif %}
 
           {% if site.business.email %}
           <a href="mailto:{{ site.business.email }}" class="btn btn-outline" style="margin: 0.5rem;">
-            Email Us
+            {{ site.content.booking.fallback_email_button }}
           </a>
           {% endif %}
 
           <p style="color: #999; margin-top: 2rem; font-size: 0.9rem;">
-            <strong>Note:</strong> To enable online booking, add your Vagaro widget URL in _config.yml
+            <strong>Note:</strong> {{ site.content.booking.fallback_note }}
           </p>
         </div>
       {% endif %}
@@ -226,8 +336,8 @@ title: Home
 <section id="contact" class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Visit Us</h2>
-      <p>We're located in the heart of Dallas on Greenville Avenue</p>
+      <h2>{{ site.content.contact.section_title }}</h2>
+      <p>{{ site.content.contact.section_subtitle }}</p>
     </div>
 
     <div class="contact-content">
@@ -236,7 +346,7 @@ title: Home
         <div class="contact-item">
           <div class="contact-icon">📍</div>
           <div class="contact-details">
-            <h4>Location</h4>
+            <h4>{{ site.content.contact.location_label }}</h4>
             <p>{{ site.business.address.full }}</p>
           </div>
         </div>
@@ -246,7 +356,7 @@ title: Home
         <div class="contact-item">
           <div class="contact-icon">📞</div>
           <div class="contact-details">
-            <h4>Phone</h4>
+            <h4>{{ site.content.contact.phone_label }}</h4>
             <p><a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a></p>
           </div>
         </div>
@@ -257,7 +367,7 @@ title: Home
         <div class="contact-item">
           <div class="contact-icon">✉️</div>
           <div class="contact-details">
-            <h4>Email</h4>
+            <h4>{{ site.content.contact.email_label }}</h4>
             <p><a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a></p>
           </div>
         </div>
@@ -267,7 +377,7 @@ title: Home
         <div class="contact-item">
           <div class="contact-icon">🕐</div>
           <div class="contact-details">
-            <h4>Hours of Operation</h4>
+            <h4>{{ site.content.contact.hours_label }}</h4>
             <ul class="hours-list">
               <li><span class="day">Monday</span> <span>{{ site.business.hours.monday }}</span></li>
               <li><span class="day">Tuesday</span> <span>{{ site.business.hours.tuesday }}</span></li>
@@ -299,13 +409,13 @@ title: Home
           <div class="map-placeholder">
             <p>📍</p>
             <p>{{ site.business.address.full }}</p>
-            <small>Add your Google Maps embed URL in _config.yml to display interactive map</small>
+            <small>{{ site.content.contact.map_fallback_note }}</small>
             <br><br>
             <a href="https://www.google.com/maps/search/?api=1&query={{ site.business.address.full | url_encode }}"
                target="_blank"
                class="btn btn-primary"
                style="margin-top: 1rem;">
-               Get Directions
+               {{ site.content.contact.directions_button }}
             </a>
           </div>
         {% endif %}

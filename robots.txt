@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
+Disallow: /_site/
 
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://www.zeybrow.com/sitemap.xml

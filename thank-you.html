@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thank You for Booking
+title: "{{ site.content.thank_you.page_title }}"
 permalink: /thank-you/
 ---
 
@@ -10,64 +10,64 @@ permalink: /thank-you/
 
       <!-- Success Icon -->
       <div style="font-size: 5rem; color: var(--secondary-color); margin-bottom: 2rem;">
-        ✓
+        {{ site.content.thank_you.success_icon }}
       </div>
 
       <!-- Thank You Message -->
       <h1 style="color: var(--primary-color); margin-bottom: 1.5rem;">
-        Thank You for Booking!
+        {{ site.content.thank_you.main_title }}
       </h1>
 
       <p style="font-size: 1.25rem; color: var(--light-text); margin-bottom: 2rem;">
-        Your appointment has been confirmed. We've sent a confirmation to your email with all the details.
+        {{ site.content.thank_you.confirmation_message }}
       </p>
 
       <p style="font-size: 1rem; color: var(--secondary-color); font-weight: 600;">
-        We look forward to seeing you soon! ✨
+        {{ site.content.thank_you.looking_forward }}
       </p>
 
       <!-- Appointment Info Box -->
       <div style="background: #f9f9f9; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: var(--shadow);">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">What's Next?</h3>
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">{{ site.content.thank_you.whats_next_title }}</h3>
         <ul style="list-style: none; padding: 0; text-align: left; color: var(--text-color);">
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0;">
-            <strong>📧 Check Your Email</strong><br>
-            <small style="color: var(--light-text);">You'll receive a confirmation email with appointment details</small>
+            <strong>{{ site.content.thank_you.step_1_title }}</strong><br>
+            <small style="color: var(--light-text);">{{ site.content.thank_you.step_1_detail }}</small>
           </li>
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0;">
-            <strong>📅 Add to Calendar</strong><br>
-            <small style="color: var(--light-text);">Use the calendar link in your email</small>
+            <strong>{{ site.content.thank_you.step_2_title }}</strong><br>
+            <small style="color: var(--light-text);">{{ site.content.thank_you.step_2_detail }}</small>
           </li>
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0;">
-            <strong>⏰ Arrive 5 Minutes Early</strong><br>
-            <small style="color: var(--light-text);">Please arrive a few minutes before your appointment</small>
+            <strong>{{ site.content.thank_you.step_3_title }}</strong><br>
+            <small style="color: var(--light-text);">{{ site.content.thank_you.step_3_detail }}</small>
           </li>
           <li style="padding: 0.75rem 0;">
-            <strong>📞 Questions?</strong><br>
-            <small style="color: var(--light-text);">Call us at {{ site.business.phone }}</small>
+            <strong>{{ site.content.thank_you.step_4_title }}</strong><br>
+            <small style="color: var(--light-text);">{{ site.content.thank_you.step_4_detail }}</small>
           </li>
         </ul>
       </div>
 
       <!-- Important Notes -->
       <div style="background: #fff; padding: 1.5rem; border-left: 4px solid var(--secondary-color); margin-bottom: 2rem; text-align: left;">
-        <h4 style="margin-bottom: 0.75rem; color: var(--primary-color);">Important Notes:</h4>
+        <h4 style="margin-bottom: 0.75rem; color: var(--primary-color);">{{ site.content.thank_you.important_notes_title }}</h4>
         <ul style="color: var(--light-text); margin: 0; padding-left: 1.5rem;">
-          <li style="margin-bottom: 0.5rem;">Please arrive with clean, makeup-free skin for facial services</li>
-          <li style="margin-bottom: 0.5rem;">Avoid caffeine before waxing appointments</li>
-          <li style="margin-bottom: 0.5rem;">24-hour cancellation notice required</li>
-          <li>Contact lenses should be removed for lash services</li>
+          <li style="margin-bottom: 0.5rem;">{{ site.content.thank_you.note_1 }}</li>
+          <li style="margin-bottom: 0.5rem;">{{ site.content.thank_you.note_2 }}</li>
+          <li style="margin-bottom: 0.5rem;">{{ site.content.thank_you.note_3 }}</li>
+          <li>{{ site.content.thank_you.note_4 }}</li>
         </ul>
       </div>
 
       <!-- Action Buttons -->
       <div style="margin-top: 2rem;">
         <a href="{{ site.url }}{{ site.baseurl }}/#home" class="btn btn-primary" style="margin: 0.5rem;">
-          Back to Home
+          {{ site.content.thank_you.button_home }}
         </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/#services" class="btn btn-outline" style="margin: 0.5rem;">
-          View Services
-        </a>
+        <!-- <a href="{{ site.url }}{{ site.baseurl }}/#services" class="btn btn-outline" style="margin: 0.5rem;">
+          {{ site.content.thank_you.button_services }}
+        </a> -->
       </div>
 
       <!-- Contact Info -->
