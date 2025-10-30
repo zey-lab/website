@@ -145,8 +145,8 @@ design:
     cta_secondary_text: "View Services"
     # Background images for different devices (responsive)
     background_image_desktop: "assets/images/collage.jpg"      # Desktop background (landscape)
-    background_image_tablet: "assets/images/collage.jpg"  # Tablet background (optional, falls back to desktop)
-    background_image_mobile: "assets/images/collage.jpg"  # Mobile background (portrait, optional)
+    background_image_tablet: "assets/images/collage-tablet.jpg"  # Tablet background (optional, falls back to desktop)
+    background_image_mobile: "assets/images/collage-mobile.jpg"  # Mobile background (portrait, optional)
     # Background positioning
     background_position_desktop: "center center"  # Options: center center, top center, bottom center
     background_position_tablet: "center center"
