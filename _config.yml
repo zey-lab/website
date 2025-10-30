@@ -54,7 +54,7 @@ business:
   credentials_short: "Licensed Master Esthetician"  # Shorter version for compact areas
 
   # Contact Information
-  phone: "(214) 258-5207" # Update with your actual phone number
+  phone: "(682) 321-2256" # Update with your actual phone number 6823212256
   email: "info@zeybrow.com" # Update with your actual email
 
   # Location
@@ -251,7 +251,7 @@ content:
     widget_title: "Book Your Appointment"
     fallback_title: "Ready to Book?"
     fallback_subtitle: "Contact us to schedule your appointment"
-    fallback_call_button: "Call (214) 258-5207"
+    fallback_call_button: "Call (682) 321-2256"
     fallback_email_button: "Email Us"
     fallback_note: "To enable online booking, add your Vagaro widget URL in _config.yml"
 
@@ -295,7 +295,7 @@ content:
     step_3_detail: "Please arrive a few minutes before your appointment"
 
     step_4_title: "📞 Questions?"
-    step_4_detail: "Call us at (214) 258-5207"
+    step_4_detail: "Call us at (682) 321-2256"
 
     important_notes_title: "Important Notes:"
     note_1: "Please arrive with clean, makeup-free skin for facial services"
