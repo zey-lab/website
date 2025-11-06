@@ -5,11 +5,13 @@
       description: "Precise hair removal technique for perfectly shaped brows"
       duration: "15-20 min"
       price: "Starting at $15"
+      url: "/eyebrow-threading/"
 
     - name: "Eyebrow Tinting"
       description: "Semi-permanent dye to enhance and define your brows"
       duration: "30 min"
       price: "Starting at $25"
+      url: "/brow-tinting/"
 
     - name: "Eyebrow Shaping & Design"
       description: "Custom eyebrow design tailored to your face shape"
@@ -20,6 +22,7 @@
       description: "Creates fuller, fluffy brows with a sleek finish"
       duration: "45 min"
       price: "Starting at $75"
+      url: "/brow-lamination/"
 
 - category: "Eyelash Services"
   icon: "👁️"
@@ -33,11 +36,13 @@
       description: "Natural lash enhancement for a lifted, curled look"
       duration: "60 min"
       price: "Starting at $85"
+      url: "/lash-lift/"
 
     - name: "Lash Lift & Tint"
       description: "Complete lash transformation combining lift and color"
       duration: "75 min"
       price: "Starting at $110"
+      url: "/lash-lift/"
 
 - category: "Facial Threading"
   icon: "💎"
@@ -46,6 +51,7 @@
       description: "Complete facial hair removal for smooth, radiant skin"
       duration: "30-40 min"
       price: "Starting at $40"
+      url: "/facial-threading/"
 
     - name: "Upper Lip Threading"
       description: "Gentle, precise hair removal for upper lip area"
@@ -69,6 +75,7 @@
       description: "Complete bikini area hair removal"
       duration: "30-45 min"
       price: "Starting at $65"
+      url: "/brazilian-waxing/"
 
     - name: "Bikini Wax"
       description: "Hair removal along bikini line"

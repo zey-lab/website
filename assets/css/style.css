@@ -419,6 +419,21 @@ img {
   margin-top: 0.5rem;
 }
 
+.service-learn-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.service-learn-more:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
 /* ===== GALLERY SECTION ===== */
 .gallery-grid {
   display: grid;
