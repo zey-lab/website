@@ -1,6 +1,6 @@
 # Site Settings
-title: "Zey Brow & Wax | Eyebrow Threading & Waxing @ Dallas, TX"
-description: "Premier Eyebrow Threading, Brazilian Waxing, Lash lifts, Browtint and many more ... in Dallas, TX. Licensed Master Esthetician on 3611 Greenville Avenue, Dallas, TX. Book your appointment today!"
+title: "Zey Brow & Wax | Eyebrow Threading & Waxing Dallas, TX | Open Sunday"
+description: "Best Eyebrow Threading & Brazilian Waxing in Dallas! Licensed Master Esthetician serving Highland Park, Greenville Avenue & East Dallas. Brow Lamination, Lash Lifts, Tinting & Full Body Waxing. Same-day appointments available. Open Sunday 12-6 PM. Book now!"
 # Favicon emoji (displays in browser tab)
 favicon_emoji: "✨"
 baseurl: "" # Empty for custom domain (use "/website" for GitHub Pages subdirectory)
@@ -18,7 +18,7 @@ logo_display:
 
 # SEO Settings
 seo:
-  keywords: "eyebrow threading Dallas, highland park, dallas, waxing Dallas, threading, lash lift Dallas, Brazilian wax Dallas, esthetician Dallas, Greenville Avenue salon, eyebrow shaping Dallas Texas, Dallas, threading near me, Dallas beauty services"
+  keywords: "eyebrow threading Dallas, eyebrow threading near me, best eyebrow threading Dallas, brow threading near me, eyebrow waxing near me, Brazilian wax Dallas, brow lamination Dallas, brow lamination near me, lash lift Dallas, eyebrow tinting Dallas, brow tint near me, threading near me, eyebrow places near me, eyebrow threading greenville avenue, Highland Park threading, East Dallas waxing, brow salon near me, brow artist near me, eyebrow threading open sunday, best brow wax near me, eyebrow near me, Dallas beauty services, Greenville Avenue salon, esthetician Dallas, eyebrow shaping Dallas"
   author: "Zey Brow & Wax"
   geo_region: "US-TX"
   geo_placename: "Dallas"
@@ -35,14 +35,25 @@ google_analytics:
   anonymize_ip: false
 
 # Google Search Console Configuration
-# To enable: Set enabled to true and add your verification code
-# Get your verification code from: https://search.google.com/search-console/
+# Already verified as owner in Google Search Console - verification tag not needed
 google_search_console:
-  enabled: false  # Set to true to enable Google Search Console verification
-  verification_code: ""  # Your GSC verification code (e.g., "abc123xyz456...")
-  # The verification code is the content value from the meta tag Google provides
-  # Example: <meta name="google-site-verification" content="abc123xyz456..." />
-  # Just paste the "abc123xyz456..." part here
+  enabled: false  # Already verified - no need for meta tag
+  verification_code: ""  # Not needed - already verified as owner
+  # Verification is complete. You can now use Google Search Console without this tag.
+
+# Meta Pixel (Facebook Pixel) Configuration
+# To enable: Set enabled to true and add your pixel ID
+# Get your pixel ID from: https://business.facebook.com/events_manager
+meta_pixel:
+  enabled: true  # Set to true to enable Meta Pixel tracking
+  pixel_id: "816641427414083"  # Your Meta Pixel ID
+
+# TikTok Pixel Configuration
+# To enable: Set enabled to true and add your pixel ID
+# Get your pixel ID from: https://ads.tiktok.com/i18n/events_manager
+tiktok_pixel:
+  enabled: false  # Set to true when you have your TikTok Pixel ID
+  pixel_id: ""  # Add your TikTok Pixel ID here
 
 # Business Information
 business:
@@ -156,7 +167,7 @@ design:
 
   # Section Visibility (Enable/Disable sections)
   sections:
-    services_enabled: false      # Set to true to show Services section
+    services_enabled: true       # Set to true to show Services section
     gallery_enabled: true        # Set to true to show Gallery section
     testimonials_enabled: true   # Set to true to show Testimonials section
 

@@ -95,8 +95,10 @@ layout: default
             <p>{{ item.description }}</p>
             <div class="service-meta">
               <span>{{ item.duration }}</span>
-              <span>{{ item.price }}</span>
             </div>
+            {% if item.url %}
+            <a href="{{ site.baseurl }}{{ item.url }}" class="service-learn-more">Learn More →</a>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>
@@ -179,6 +181,7 @@ layout: default
     <div class="section-header">
       <h2>{{ site.content.booking.section_title }}</h2>
       <p>{{ site.content.booking.section_subtitle }}</p>
+      <p style="font-size: 1.1rem; color: var(--secondary-color); font-weight: 600; margin-top: 1rem;">🚶 Walk-ins also Welcome! </p>
     </div>
 
     <div class="booking-widget">
