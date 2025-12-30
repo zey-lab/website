@@ -26,7 +26,7 @@ faqs:
     answer: "Most clients find threading comfortable, with only mild sensation. It's generally less painful than waxing and becomes easier with regular appointments as your skin adjusts."
 
   - question: "Are you open on Sunday?"
-    answer: "Yes! We're open Sunday from 12:00 PM to 6:00 PM. Perfect for weekend beauty appointments. Book online or call (682) 321-2256."
+    answer: "Yes! We're open Sunday from 12:00 PM to 6:00 PM. Perfect for weekend beauty appointments. Book online or call (214) 258-5207."
 
   - question: "Where are you located in Dallas?"
     answer: "We're located at 3611 Greenville Avenue, Dallas, TX 75206. We serve clients from Highland Park, East Dallas, M Streets, and surrounding neighborhoods. Convenient parking available."
@@ -94,7 +94,7 @@ We also offer combination services for a complete transformation:
 
 📍 **Location**: 3611 Greenville Avenue, Dallas, TX 75206
 
-📞 **Call**: (682) 321-2256
+📞 **Call**: (214) 258-5207
 
 💻 **Click to Book an Appointment**: [Book Now](/#booking)
 

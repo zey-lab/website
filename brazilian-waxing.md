@@ -131,7 +131,7 @@ We're open Tuesday-Saturday 10 AM-8 PM and **Sunday 12-6 PM** for your convenien
 
 📍 **Location**: 3611 Greenville Avenue, Dallas, TX 75206
 
-📞 **Call or Text**: (682) 321-2256
+📞 **Call or Text**: (214) 258-5207
 
 💻 **Click to Book an Appointment**: [Book Now](/#booking)
 
