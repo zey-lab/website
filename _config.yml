@@ -150,7 +150,7 @@ design:
 
   # Hero Section
   hero:
-    title: "Elevate Your Beauty"
+    title: "Elevate Your Beauty at your boutique salon"
     subtitle: "Expert Threading, Waxing & Lash Services in Dallas, Texas"
     cta_text: "Book Appointment"
     cta_secondary_text: "View Services"
@@ -202,11 +202,27 @@ design:
         caption: "Eyebrow Threading and Extension Lashes Service"
         alt: "Eyebrow Threading and Extension Lashes Service"
 
+      - image: "assets/images/gallery/client-7.jpg"
+        caption: "Eyebrow Threading Service"
+        alt: "Eyebrow Threading Service"
+
+      - image: "assets/images/gallery/client-8.jpg"
+        caption: "Eyebrow Threading Service"
+        alt: "Eyebrow Threading Service"
+      
+      - image: "assets/images/gallery/client-9.jpg"
+        caption: "Eyebrow Threading Service"
+        alt: "Eyebrow Threading Service"
+
+      - image: "assets/images/gallery/client-10.jpg"
+        caption: "Sides Waxing Service"
+        alt: "Sides Waxing Service"
+
   # Testimonials Section
   testimonials:
     enabled: true  # Set to true to show testimonials section
     section_title: "What Our Clients Say"
-    section_subtitle: "Real experiences from our satisfied customers"
+    section_subtitle: "Real experiences from our satisfied customers."
 
     # Add your client testimonials here
     items:
