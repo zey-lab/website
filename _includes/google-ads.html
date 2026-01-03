@@ -1,0 +1,11 @@
+{% if site.google_ads.enabled and site.google_ads.tracking_id %}
+<!-- Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_ads.tracking_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_ads.tracking_id }}');
+</script>
+{% endif %}

@@ -34,6 +34,11 @@ google_analytics:
   # Optional: anonymize IP addresses for privacy compliance
   anonymize_ip: false
 
+# Google Ads Configuration
+google_ads:
+  enabled: true
+  tracking_id: "AW-17679656040"
+
 # Google Search Console Configuration
 # Already verified as owner in Google Search Console - verification tag not needed
 google_search_console:
