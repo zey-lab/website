@@ -94,7 +94,7 @@ Add brow tinting for even more definition and color depth.
 |-----------|----------|------------|-------|
 | **Brow Lamination** | 45 min | None | 6-8 weeks |
 | Microblading | 2-3 hrs | Moderate | 1-3 years |
-| Brow Tinting | 30 min | None | 3-6 weeks |
+| Brow Tinting | 10 min | None | 3-6 weeks |
 | Daily Makeup | 5-10 min/day | None | Hours |
 
 **Why clients choose lamination:**

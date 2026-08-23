@@ -3,13 +3,13 @@
   items:
     - name: "Eyebrow Threading"
       description: "Precise hair removal technique for perfectly shaped brows"
-      duration: "15-20 min"
+      duration: "10 min"
       price: "Starting at $15"
       url: "/eyebrow-threading/"
 
     - name: "Eyebrow Tinting"
       description: "Semi-permanent dye to enhance and define your brows"
-      duration: "30 min"
+      duration: "10 min"
       price: "Starting at $25"
       url: "/brow-tinting/"
 
