@@ -37,8 +37,8 @@ Geographic Coordinates: 32.83157061184823, -96.77025315822564
 ## Services Offered
 
 ### Eyebrow Services
-- Eyebrow Threading: Precise hair removal technique for perfectly shaped brows (15-20 min, starting at $15)
-- Eyebrow Tinting: Semi-permanent dye to enhance and define your brows (30 min, starting at $25)
+- Eyebrow Threading: Precise hair removal technique for perfectly shaped brows (10 min, starting at $15)
+- Eyebrow Tinting: Semi-permanent dye to enhance and define your brows (10 min, starting at $25)
 - Eyebrow Shaping & Design: Custom eyebrow design tailored to your face shape (30 min, starting at $30)
 - Brow Lamination: Creates fuller, fluffy brows with a sleek finish (45 min, starting at $75)
 
