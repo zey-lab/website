@@ -62,7 +62,7 @@ With years of experience and professional certification, I provide:
 - Clean, precise lines
 - Symmetrical results
 - Minimal discomfort
-- Quick, efficient service (15-20 minutes)
+- Quick, efficient service (10 minutes)
 
 ### Our Eyebrow Threading Process
 

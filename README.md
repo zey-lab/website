@@ -108,7 +108,7 @@ Example:
   items:
     - name: "Eyebrow Threading"
       description: "Precise hair removal technique"
-      duration: "15-20 min"
+      duration: "10 min"
       price: "Starting at $15"
 ```
 

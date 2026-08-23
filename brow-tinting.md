@@ -74,19 +74,19 @@ Brow tinting is ideal if you have:
 
 ### The Brow Tinting Process
 
-#### Step 1: Consultation & Color Selection (5 minutes)
+#### Step 1: Consultation & Color Selection
 We discuss your desired brow color and assess your natural hair color, skin tone, and undertones. I custom-mix the perfect shade for you—not too dark, not too light, just right.
 
-#### Step 2: Preparation (5 minutes)
+#### Step 2: Preparation
 I cleanse your brow area and may apply a protective barrier around your brows to ensure clean, precise application.
 
-#### Step 3: Tint Application (10 minutes)
+#### Step 3: Tint Application
 Professional tinting solution is carefully applied to every brow hair. The tint processes for 5-10 minutes while you relax.
 
-#### Step 4: Reveal (5 minutes)
+#### Step 4: Reveal
 The tint is gently removed, revealing beautifully defined, fuller-looking brows!
 
-**Total time**: About 30 minutes
+**Service time**: 10 minutes
 
 ### Custom Color Matching
 
@@ -109,7 +109,7 @@ Every client gets a **custom color blend** based on:
 | Feature | Brow Tinting | Daily Brow Makeup |
 |---------|--------------|-------------------|
 | **Duration** | 3-6 weeks | Few hours (until removal) |
-| **Time** | 30 min (once) | 5-10 min daily |
+| **Time** | 10 min (once) | 5-10 min daily |
 | **Waterproof** | Yes | Depends on product |
 | **Smudge-proof** | Yes | Can smudge/fade |
 | **Looks natural** | Very natural | Depends on skill |
@@ -216,7 +216,7 @@ Open Tuesday-Saturday 10 AM-8 PM and **Sunday 12-6 PM**.
 - 🎨 **Custom color matching** for every client
 - 🧪 **Professional-grade products** specifically for brows
 - 🧼 **Clean, welcoming** environment
-- ⏱️ **Quick service** - in and out in 30 minutes
+- ⏱️ **Quick service** - in and out in 10 minutes
 - 📅 **Flexible hours** including Sunday appointments
 
 ### Brow Tint Near Me - Dallas
