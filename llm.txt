@@ -36,30 +36,30 @@ Geographic Coordinates: 32.83157061184823, -96.77025315822564
 
 ## Services Offered
 
-### Eyebrow Services
-- Eyebrow Threading: Precise hair removal technique for perfectly shaped brows (10 min, starting at $15)
+### Shaping & Design
+- Eyebrow Shaping & Design with Threading: Precise hair removal technique for perfectly shaped brows (10 min, starting at $15)
 - Eyebrow Tinting: Semi-permanent dye to enhance and define your brows (10 min, starting at $25)
-- Eyebrow Shaping & Design: Custom eyebrow design tailored to your face shape (30 min, starting at $30)
+- Eyebrow Shaping & Design with Wax: Custom eyebrow design tailored to your face shape (10 min, starting at $30)
 - Brow Lamination: Creates fuller, fluffy brows with a sleek finish (45 min, starting at $75)
 
 ### Eyelash Services
 - Eyelash Tinting: Darken and define your natural lashes (30 min, starting at $30)
-- Lash Lift: Natural lash enhancement for a lifted, curled look (60 min, starting at $85)
-- Lash Lift & Tint: Complete lash transformation combining lift and color (75 min, starting at $110)
+- Lash Lift: Natural lash enhancement for a lifted, curled look (45 min, starting at $85)
+- Lash Lift & Tint: Complete lash transformation combining lift and color (60 min, starting at $110)
 - Cluster Lashes: Professional cluster lash application
 
 ### Facial Threading
-- Full Face Threading: Complete facial hair removal for smooth, radiant skin (30-40 min, starting at $40)
-- Upper Lip Threading: Gentle, precise hair removal for upper lip area (10 min, starting at $8)
+- Full Face Threading: Complete facial hair removal for smooth, radiant skin (30 min, starting at $40)
+- Upper Lip Threading: Gentle, precise hair removal for upper lip area (5 min, starting at $8)
 - Chin Threading: Clean, precise chin and jawline hair removal (10 min, starting at $10)
 - Sideburns Threading: Shape and define your sideburns (10 min, starting at $12)
 
 ### Waxing Services
 - Brazilian Wax: Complete bikini area hair removal (30-45 min, starting at $65)
-- Bikini Wax: Hair removal along bikini line (20-30 min, starting at $35)
-- Leg Wax (Full): Smooth, hair-free legs from thigh to ankle (45-60 min, starting at $75)
-- Leg Wax (Half): Lower or upper leg waxing (30 min, starting at $45)
-- Arm Wax (Full): Complete arm hair removal (30-40 min, starting at $45)
+- Bikini Wax: Hair removal along bikini line (15 min, starting at $35)
+- Leg Wax (Full): Smooth, hair-free legs from thigh to ankle (30-40 min, starting at $75)
+- Leg Wax (Half): Lower or upper leg waxing (10-20 min, starting at $45)
+- Arm Wax (Full): Complete arm hair removal (20-30 min, starting at $45)
 - Underarm Wax: Quick and effective underarm hair removal (15 min, starting at $20)
 - Back Wax: Complete back hair removal (30-40 min, starting at $55)
 - Chest Wax: Chest hair removal for smooth skin (30 min, starting at $45)
@@ -67,7 +67,7 @@ Geographic Coordinates: 32.83157061184823, -96.77025315822564
 ### Specialized Hair Removal
 - Nose Wax: Safe, effective nose hair removal (10 min, starting at $15)
 - Ear Wax: Gentle ear hair removal (10 min, starting at $15)
-- Neck Wax: Clean neck line and hair removal (15 min, starting at $20)
+- Neck Wax: Clean neck line and hair removal (10 min, starting at $20)
 
 ## About the Business
 

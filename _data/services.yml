@@ -1,7 +1,6 @@
-- category: "Eyebrow Services"
-  icon: "✨"
+- category: "Shaping & Design"
   items:
-    - name: "Eyebrow Threading"
+    - name: "Eyebrow Shaping & Design with Threading"
       description: "Precise hair removal technique for perfectly shaped brows"
       duration: "10 min"
       price: "Starting at $15"
@@ -13,9 +12,9 @@
       price: "Starting at $25"
       url: "/brow-tinting/"
 
-    - name: "Eyebrow Shaping & Design"
+    - name: "Eyebrow Shaping & Design with Wax"
       description: "Custom eyebrow design tailored to your face shape"
-      duration: "30 min"
+      duration: "10 min"
       price: "Starting at $30"
 
     - name: "Brow Lamination"
@@ -25,7 +24,6 @@
       url: "/brow-lamination/"
 
 - category: "Eyelash Services"
-  icon: "👁️"
   items:
     - name: "Eyelash Tinting"
       description: "Darken and define your natural lashes"
@@ -34,28 +32,27 @@
 
     - name: "Lash Lift"
       description: "Natural lash enhancement for a lifted, curled look"
-      duration: "60 min"
+      duration: "45 min"
       price: "Starting at $85"
       url: "/lash-lift/"
 
     - name: "Lash Lift & Tint"
       description: "Complete lash transformation combining lift and color"
-      duration: "75 min"
+      duration: "60 min"
       price: "Starting at $110"
       url: "/lash-lift/"
 
 - category: "Facial Threading"
-  icon: "💎"
   items:
     - name: "Full Face Threading"
       description: "Complete facial hair removal for smooth, radiant skin"
-      duration: "30-40 min"
+      duration: "30 min"
       price: "Starting at $40"
       url: "/facial-threading/"
 
     - name: "Upper Lip Threading"
       description: "Gentle, precise hair removal for upper lip area"
-      duration: "10 min"
+      duration: "5 min"
       price: "Starting at $8"
 
     - name: "Chin Threading"
@@ -69,7 +66,6 @@
       price: "Starting at $12"
 
 - category: "Waxing Services"
-  icon: "🌟"
   items:
     - name: "Brazilian Wax"
       description: "Complete bikini area hair removal"
@@ -79,22 +75,22 @@
 
     - name: "Bikini Wax"
       description: "Hair removal along bikini line"
-      duration: "20-30 min"
+      duration: "15 min"
       price: "Starting at $35"
 
     - name: "Leg Wax (Full)"
       description: "Smooth, hair-free legs from thigh to ankle"
-      duration: "45-60 min"
+      duration: "30-40 min"
       price: "Starting at $75"
 
     - name: "Leg Wax (Half)"
       description: "Lower or upper leg waxing"
-      duration: "30 min"
+      duration: "10-20 min"
       price: "Starting at $45"
 
     - name: "Arm Wax (Full)"
       description: "Complete arm hair removal"
-      duration: "30-40 min"
+      duration: "20-30 min"
       price: "Starting at $45"
 
     - name: "Underarm Wax"
@@ -113,7 +109,6 @@
       price: "Starting at $45"
 
 - category: "Specialized Hair Removal"
-  icon: "✂️"
   items:
     - name: "Nose Wax"
       description: "Safe, effective nose hair removal"
@@ -127,5 +122,5 @@
 
     - name: "Neck Wax"
       description: "Clean neck line and hair removal"
-      duration: "15 min"
+      duration: "10 min"
       price: "Starting at $20"
