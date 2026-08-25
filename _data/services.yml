@@ -6,16 +6,16 @@
       price: "Starting at $15"
       url: "/eyebrow-threading/"
 
+    - name: "Eyebrow Shaping & Design with Wax"
+      description: "Custom eyebrow design tailored to your face shape"
+      duration: "10 min"
+      price: "Starting at $30"
+
     - name: "Eyebrow Tinting"
       description: "Semi-permanent dye to enhance and define your brows"
       duration: "10 min"
       price: "Starting at $25"
       url: "/brow-tinting/"
-
-    - name: "Eyebrow Shaping & Design with Wax"
-      description: "Custom eyebrow design tailored to your face shape"
-      duration: "10 min"
-      price: "Starting at $30"
 
     - name: "Brow Lamination"
       description: "Creates fuller, fluffy brows with a sleek finish"
