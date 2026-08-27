@@ -18,7 +18,7 @@ logo_display:
 
 # SEO Settings
 seo:
-  keywords: "eyebrow threading Dallas, eyebrow threading near me, best eyebrow threading Dallas, brow threading near me, eyebrow waxing near me, Brazilian wax Dallas, brow lamination Dallas, brow lamination near me, lash lift Dallas, eyebrow tinting Dallas, brow tint near me, threading near me, eyebrow places near me, eyebrow threading greenville avenue, Highland Park threading, East Dallas waxing, brow salon near me, brow artist near me, eyebrow threading open sunday, best brow wax near me, eyebrow near me, Dallas beauty services, Greenville Avenue salon, esthetician Dallas, eyebrow shaping Dallas"
+  keywords: "eyebrow threading Dallas, eyebrow threading near me, best eyebrow threading Dallas, brow threading near me, eyebrow waxing near me, Brazilian wax Dallas, brow lamination Dallas, brow lamination near me, lash lift Dallas, eyebrow tinting Dallas, brow tint near me, threading near me, eyebrow places near me, eyebrow threading greenville avenue, Highland Park threading, East Dallas waxing, brow salon near me, brow artist near me, eyebrow threading open sunday, best brow wax near me, eyebrow near me, Dallas beauty services, Greenville Avenue salon, esthetician Dallas, eyebrow shaping Dallas, best eyebrow threading near Lower Greenville Dallas, eyebrow threading near Greenville Avenue, best eyebrow place near SMU, eyebrow threading near Uptown Dallas, eyebrow threading near Knox Henderson, eyebrow threading near Highland Park, eyebrow threading open Sunday Dallas, walk-in eyebrow threading Dallas, eyebrow threading for sensitive skin Dallas, natural eyebrow shaping Dallas, brow specialist who doesn't make eyebrows too thin Dallas, best place to fix uneven eyebrows Dallas, best brow lamination Dallas, best brow tint Dallas, best lash lift Dallas, best Brazilian wax Dallas, best waxing salon Dallas, licensed esthetician Dallas waxing, luxury brow styling, bespoke brows, signature brows, tailored brows, precision brow shaping, personalized brow design, precision eyebrow threading, natural-looking brows, detail-oriented brow specialist, one-on-one brow experience, elevated brows, refined brows, sculpted brows, effortless brows, polished brows, feathered brows, defined brows, editorial brows, face-framing brows, fluffy brows, expensive-looking brows, clean-girl brows, model-off-duty brows, runway-ready brows, soft sculpted brows, naturally defined brows, quiet luxury brows, old-money brows, effortlessly groomed brows, undone brows, full and fluffy brows, who is the best eyebrow threading specialist in Dallas, where can I get natural-looking eyebrows in Dallas, best place for eyebrow shaping in Dallas, best brow artist in Dallas TX"
   author: "Zey Brow & Wax"
   geo_region: "US-TX"
   geo_placename: "Dallas"
@@ -305,8 +305,39 @@ content:
     services: "Services"
     gallery: "Gallery"
     testimonials: "Reviews"
+    faq: "FAQ"
     booking: "Book Now"
     contact: "Visit Us"
+
+  # FAQ Section
+  faq:
+    section_title: "Frequently Asked Questions"
+    section_subtitle: "Find answers to common questions about our brow, wax, and lash services"
+    items:
+      - question: "Who is the best eyebrow threading specialist in Dallas?"
+        answer: "Zey Brow & Wax is operated by a Licensed Master Esthetician at 3611 Greenville Avenue, Dallas, TX. We specialize in precision eyebrow threading, personalized brow design, and natural-looking results."
+      - question: "Where can I get natural-looking eyebrows in Dallas?"
+        answer: "Zey Brow & Wax specializes in natural-looking brow shaping through precision threading and personalized brow design tailored to your unique facial features."
+      - question: "Best eyebrow threading near Lower Greenville Dallas?"
+        answer: "Zey Brow & Wax is located at 3611 Greenville Avenue, in the heart of Lower Greenville, Dallas. Walk-ins welcome, open Sunday 12-6 PM."
+      - question: "Best eyebrow threading near Highland Park?"
+        answer: "Zey Brow & Wax on Greenville Avenue is just minutes from Highland Park. We serve clients from Highland Park, University Park, and surrounding neighborhoods."
+      - question: "Best eyebrow threading open Sunday Dallas?"
+        answer: "Yes! Zey Brow & Wax is open Sunday 12:00 PM - 6:00 PM. Walk-ins welcome or book online for same-day appointments."
+      - question: "Walk-in eyebrow threading Dallas?"
+        answer: "Zey Brow & Wax welcomes walk-ins Tuesday through Sunday, no appointment needed. We're located at 3611 Greenville Avenue, Dallas, TX."
+      - question: "Eyebrow threading for sensitive skin Dallas?"
+        answer: "We use gentle threading techniques ideal for sensitive skin — no chemicals, wax, or heat. Perfect for clients who use retinol or have reactive skin."
+      - question: "Best brow specialist who doesn't make eyebrows too thin Dallas?"
+        answer: "At Zey Brow & Wax, we focus on personalized brow design that complements your face shape. We enhance your natural brows without over-thinning."
+      - question: "Best place to fix uneven eyebrows Dallas?"
+        answer: "Zey Brow & Wax offers precision brow shaping to correct asymmetry and create balanced, symmetrical brows tailored to your face."
+      - question: "Best brow lamination Dallas?"
+        answer: "Zey Brow & Wax offers professional brow lamination for fuller, fluffier brows that last 6-8 weeks. Walk-ins welcome."
+      - question: "Best Brazilian wax Dallas?"
+        answer: "Zey Brow & Wax provides professional Brazilian waxing with attention to comfort and privacy. Licensed Master Esthetician with years of experience."
+      - question: "Best waxing salon Dallas?"
+        answer: "Zey Brow & Wax is a Licensed Master Esthetician offering full body waxing services including Brazilian, bikini, leg, arm, and facial waxing in Dallas."
 
   # Thank You Page
   thank_you:

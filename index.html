@@ -174,6 +174,74 @@ layout: default
 </section>
 {% endif %}
 
+<!-- FAQ SECTION -->
+{% if site.content.faq.items.size > 0 %}
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ site.content.faq.section_title }}</h2>
+      <p>{{ site.content.faq.section_subtitle }}</p>
+    </div>
+
+    <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+      {% for item in site.content.faq.items %}
+      <details class="faq-item" style="margin-bottom: 1rem; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <summary style="padding: 1.2rem 1.5rem; cursor: pointer; font-weight: 600; font-size: 1.05rem; background: #fafafa; color: #2c2c2c; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          {{ item.question }}
+          <span style="font-size: 1.2rem; color: #d4af37; transition: transform 0.2s;">+</span>
+        </summary>
+        <div style="padding: 1rem 1.5rem 1.2rem; color: #555; line-height: 1.7; font-size: 0.95rem;">
+          {{ item.answer }}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+
+    <!-- SEO: Brow Style Descriptors (visible to search engines, styled as tag cloud) -->
+    <div style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+      <p style="font-size: 0.85rem; color: #999; margin-bottom: 0.8rem;">Our Brow Styles</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+        {% assign styles = "Elevated, Refined, Sculpted, Tailored, Bespoke, Effortless, Polished, Feathered, Defined, Editorial, Natural, Face-Framing, Fluffy, Expensive-Looking, Clean-Girl, Model-Off-Duty, Runway-Ready, Soft Sculpted, Quiet Luxury, Old-Money, Effortlessly Groomed" | split: ", " %}
+        {% for style in styles %}
+        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: #f5f0e8; color: #8b7355; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">{{ style }}</span>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- SEO: Service Area Tags -->
+    <div style="max-width: 800px; margin: 2rem auto 0; text-align: center;">
+      <p style="font-size: 0.85rem; color: #999; margin-bottom: 0.8rem;">Serving Dallas Neighborhoods</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+        {% assign neighborhoods = "Lower Greenville, Greenville Avenue, East Dallas, Uptown Dallas, Knox/Henderson, Highland Park, University Park, SMU Area, M Streets, Lakewood, Central Dallas" | split: ", " %}
+        {% for hood in neighborhoods %}
+        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: #f0f0f0; color: #666; border-radius: 20px; font-size: 0.8rem;">{{ hood }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schema.org FAQPage Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in site.content.faq.items %}
+    {
+      "@type": "Question",
+      "name": "{{ item.question | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer | escape }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 <!-- BOOKING SECTION -->
 <section id="booking" class="section booking-section">
   <div class="container">
