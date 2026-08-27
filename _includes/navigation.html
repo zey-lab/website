@@ -15,9 +15,9 @@
         {% if site.design.sections.services_enabled %}<li><a href="#services" class="nav-link">{{ site.content.navigation.services }}</a></li>{% endif %}
         {% if site.design.sections.gallery_enabled %}<li><a href="#gallery" class="nav-link">{{ site.content.navigation.gallery }}</a></li>{% endif %}
         {% if site.design.sections.testimonials_enabled %}<li><a href="#testimonials" class="nav-link">{{ site.content.navigation.testimonials }}</a></li>{% endif %}
-        {% if site.content.faq.items.size > 0 %}<li><a href="#faq" class="nav-link">{{ site.content.navigation.faq }}</a></li>{% endif %}
         <li><a href="#booking" class="nav-link">{{ site.content.navigation.booking }}</a></li>
         <li><a href="#contact" class="nav-link">{{ site.content.navigation.contact }}</a></li>
+        {% if site.content.faq.items.size > 0 %}<li><a href="#faq" class="nav-link">{{ site.content.navigation.faq }}</a></li>{% endif %}
         {% if site.business.phone %}
         <li><a href="tel:{{ site.business.phone }}" class="btn btn-primary">{{ site.business.phone }}</a></li>
         {% endif %}
