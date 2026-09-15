@@ -210,10 +210,37 @@ img {
 }
 
 .btn-hiring {
+  --hiring-border-angle: 0deg;
   background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid transparent;
+  border-radius: 3px;
   color: #fff;
-  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.35), 0 8px 24px rgba(0, 0, 0, 0.16);
+  isolation: isolate;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.btn-hiring::before {
+  background: conic-gradient(from var(--hiring-border-angle), #d4af37, #f7e7b0, #8b7355, #d4af37);
+  border-radius: 5px;
+  content: '';
+  inset: -3px;
+  padding: 2px;
+  position: absolute;
+  z-index: -2;
+  animation: hiringBorderFlow 3.2s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.btn-hiring::after {
+  background: rgba(44, 44, 44, 0.34);
+  border-radius: 3px;
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .btn-hiring span {
@@ -223,10 +250,27 @@ img {
 }
 
 .btn-hiring:hover {
-  background: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background: rgba(212, 175, 55, 0.22);
+  border-color: rgba(255, 255, 255, 0.25);
   color: #fff;
   transform: translateY(-2px);
+}
+
+.btn-hiring:hover::before { animation-duration: 1.8s; }
+
+@keyframes hiringBorderFlow {
+  to { --hiring-border-angle: 360deg; }
+}
+
+@property --hiring-border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-hiring::before,
+  .btn-hiring:hover::before { animation: none; }
 }
 
 .hiring-page-hero {
