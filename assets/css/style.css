@@ -211,17 +211,18 @@ img {
 
 .btn-hiring {
   --hiring-border-angle: 0deg;
-  background: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, #6d28d9 0%, #a855f7 52%, #7e22ce 100%);
   border: 2px solid transparent;
   border-radius: 3px;
   color: #fff;
   isolation: isolate;
   position: relative;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.34);
+  animation: hiringPulse 2.6s ease-in-out infinite;
 }
 
 .btn-hiring::before {
-  background: conic-gradient(from var(--hiring-border-angle), #d4af37, #f7e7b0, #8b7355, #d4af37);
+  background: conic-gradient(from var(--hiring-border-angle), #22c55e, #a855f7, #d4af37, #22c55e);
   border-radius: 5px;
   content: '';
   inset: -3px;
@@ -235,7 +236,7 @@ img {
 }
 
 .btn-hiring::after {
-  background: rgba(44, 44, 44, 0.34);
+  background: linear-gradient(135deg, rgba(109, 40, 217, 0.96), rgba(168, 85, 247, 0.96));
   border-radius: 3px;
   content: '';
   inset: 0;
@@ -244,22 +245,27 @@ img {
 }
 
 .btn-hiring span {
-  color: var(--secondary-color);
+  color: #d9f99d;
   font-size: 1.05em;
   margin-left: 0.35rem;
 }
 
 .btn-hiring:hover {
-  background: rgba(212, 175, 55, 0.22);
-  border-color: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, #7e22ce 0%, #c084fc 52%, #9333ea 100%);
+  border-color: rgba(255, 255, 255, 0.3);
   color: #fff;
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
 
 .btn-hiring:hover::before { animation-duration: 1.8s; }
 
 @keyframes hiringBorderFlow {
   to { --hiring-border-angle: 360deg; }
+}
+
+@keyframes hiringPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
 }
 
 @property --hiring-border-angle {
@@ -269,6 +275,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .btn-hiring,
   .btn-hiring::before,
   .btn-hiring:hover::before { animation: none; }
 }
