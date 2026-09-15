@@ -29,18 +29,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // Smooth-scroll only same-page links; let cross-page links navigate normally.
+  document.querySelectorAll('a[href^="#"], a[href*="/#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const url = new URL(this.href, window.location.href);
+      const samePage = url.origin === window.location.origin && url.pathname === window.location.pathname;
+      if (!samePage || !url.hash) return;
+
+      const target = document.querySelector(url.hash);
       if (target) {
+        e.preventDefault();
         const offset = 80; // Navigation height offset
         const targetPosition = target.offsetTop - offset;
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
         });
+        history.replaceState(null, '', url.hash);
       }
     });
   });
