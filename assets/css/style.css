@@ -209,6 +209,54 @@ img {
   color: white;
 }
 
+.btn-hiring {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.35), 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.btn-hiring span {
+  color: var(--secondary-color);
+  font-size: 1.05em;
+  margin-left: 0.35rem;
+}
+
+.btn-hiring:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.hiring-page-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  color: #fff;
+  margin-top: 70px;
+  padding: clamp(5rem, 10vw, 8rem) 1.5rem clamp(4rem, 8vw, 6rem);
+  text-align: center;
+}
+
+.hiring-page-hero h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.hiring-page-hero p:last-child {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.12rem;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.hiring-page-section { background: #f8f6f1; }
+
+@media (max-width: 640px) {
+  .hero-buttons .btn { width: 100%; }
+  .hiring-page-hero { margin-top: 60px; }
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
   min-height: 100vh;
