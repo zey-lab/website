@@ -287,6 +287,38 @@ content:
     fallback_email_button: "Email Us"
     fallback_note: "To enable online booking, add your Vagaro widget URL in _config.yml"
 
+  # Hiring Section
+  hiring:
+    enabled: true
+    section_label: "Careers at Zey Brow & Wax"
+    section_title: "Join Our Team"
+    section_subtitle: "Bring your talent, precision, and passion to a beauty studio built around exceptional client experiences."
+    position_title: "Esthetician / Brow & Lash Specialist"
+    employment_type: "Part-Time · Opportunity for Full-Time"
+    intro: "We are looking for an experienced, talented, and detail-oriented Licensed Esthetician to join our team. You will work with a high-end clientele where professionalism, consistency, and thoughtful service matter as much as technical skill."
+    requirements_title: "What We’re Looking For"
+    requirements:
+      - "Valid Esthetician License"
+      - "Strong English communication skills; Spanish-speaking is a strong plus"
+      - "Professional experience preferred, or exceptional skill and talent in the field"
+      - "Confidence working with detail-oriented and high-end clients"
+      - "Excellent attention to detail, precision, and understanding of facial symmetry"
+      - "Professional, reliable, clean, organized, and committed to excellent customer service"
+    specialties_title: "Core Service Skills"
+    specialties:
+      - "Eyebrow threading"
+      - "Eyebrow shaping and mapping"
+      - "Waxing"
+      - "Brow lamination"
+      - "Lash lifting"
+    culture_title: "The Right Fit"
+    culture_text: "The right person brings a positive attitude, warm personality, empathy, and genuine passion for helping clients look and feel their best. Our clients expect quality, cleanliness, precision, and consistency—and we do too."
+    schedule_title: "Schedule & Opportunity"
+    schedule_text: "The schedule is flexible and may vary based on client appointments and business needs. This role begins part-time, with the opportunity to transition to full-time based on performance, reliability, skill level, and mutual fit. Specific days and hours will be discussed during the interview."
+    apply_title: "Interested in Joining Us?"
+    apply_text: "We’d love to learn more about you and your experience. Send your resume and a brief introduction to get started."
+    apply_button: "Apply by Email"
+
   # Contact Section
   contact:
     section_title: "Visit Us"
@@ -305,6 +337,7 @@ content:
     services: "Services"
     gallery: "Gallery"
     testimonials: "Reviews"
+    hiring: "Join Our Team"
     booking: "Book Now"
     contact: "Visit Us"
 

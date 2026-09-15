@@ -889,3 +889,89 @@ img {
 .about-section {
   padding-top: -2rem;
 }
+
+/* ===== HIRING SECTION ===== */
+.hiring-section { background: #f8f6f1; }
+.section-eyebrow,
+.hiring-kicker {
+  color: var(--accent-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 0.65rem;
+  text-transform: uppercase;
+}
+.hiring-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+  gap: 1.5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.hiring-card {
+  background: #fff;
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(44, 44, 44, 0.06);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+.hiring-position-heading {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+.hiring-position-heading h3,
+.hiring-side-card h3,
+.hiring-apply h3 { margin-bottom: 0.35rem; }
+.hiring-kicker { margin-bottom: 0.45rem; }
+.hiring-type {
+  background: #f5f0e8;
+  border-radius: 20px;
+  color: var(--accent-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.55rem 0.8rem;
+  text-align: center;
+}
+.hiring-columns {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  margin-top: 1.75rem;
+}
+.hiring-card h4 { font-size: 1.15rem; margin-bottom: 0.9rem; }
+.hiring-list { list-style: none; }
+.hiring-list li {
+  color: var(--light-text);
+  margin-bottom: 0.7rem;
+  padding-left: 1.35rem;
+  position: relative;
+}
+.hiring-list li::before {
+  color: var(--secondary-color);
+  content: '✓';
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}
+.hiring-list-compact li { margin-bottom: 0.85rem; }
+.hiring-side-card { border-top: 3px solid var(--secondary-color); }
+.hiring-side-card h4 { margin-top: 1.5rem; }
+.hiring-apply {
+  margin: 1.5rem auto 0;
+  max-width: 1120px;
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+}
+.hiring-apply p { margin: 0 auto 1.25rem; max-width: 620px; }
+@media (max-width: 768px) {
+  .hiring-layout,
+  .hiring-columns { grid-template-columns: 1fr; }
+  .hiring-position-heading { flex-direction: column; }
+  .hiring-type { align-self: flex-start; }
+}
