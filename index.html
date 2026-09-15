@@ -174,6 +174,56 @@ layout: default
 </section>
 {% endif %}
 
+<!-- HIRING SECTION -->
+{% if site.content.hiring.enabled %}
+<section id="hiring" class="section hiring-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">{{ site.content.hiring.section_label }}</p>
+      <h2>{{ site.content.hiring.section_title }}</h2>
+      <p>{{ site.content.hiring.section_subtitle }}</p>
+    </div>
+    <div class="hiring-layout">
+      <article class="hiring-card hiring-main-card">
+        <div class="hiring-position-heading">
+          <div>
+            <p class="hiring-kicker">Now Hiring</p>
+            <h3>{{ site.content.hiring.position_title }}</h3>
+          </div>
+          <span class="hiring-type">{{ site.content.hiring.employment_type }}</span>
+        </div>
+        <p>{{ site.content.hiring.intro }}</p>
+        <div class="hiring-columns">
+          <div>
+            <h4>{{ site.content.hiring.requirements_title }}</h4>
+            <ul class="hiring-list">
+              {% for item in site.content.hiring.requirements %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h4>{{ site.content.hiring.specialties_title }}</h4>
+            <ul class="hiring-list hiring-list-compact">
+              {% for item in site.content.hiring.specialties %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+      </article>
+      <aside class="hiring-card hiring-side-card">
+        <h3>{{ site.content.hiring.culture_title }}</h3>
+        <p>{{ site.content.hiring.culture_text }}</p>
+        <h4>{{ site.content.hiring.schedule_title }}</h4>
+        <p>{{ site.content.hiring.schedule_text }}</p>
+      </aside>
+    </div>
+    <div class="hiring-apply">
+      <h3>{{ site.content.hiring.apply_title }}</h3>
+      <p>{{ site.content.hiring.apply_text }}</p>
+      {% if site.business.email %}<a class="btn btn-primary" href="mailto:{{ site.business.email }}?subject=Application%20-%20{{ site.content.hiring.position_title | url_encode }}">{{ site.content.hiring.apply_button }}</a>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- BOOKING SECTION -->
 <section id="booking" class="section booking-section">
   <div class="container">
